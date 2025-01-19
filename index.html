@@ -9,12 +9,42 @@
     <title>Plantin</title>
   </head>
   <body>
-    <img
-      src="./src/assets/logo.png"
-      alt="The logo of Plantin-Moretus Museum with the compass illustration"
-      width="200"
-      height="187"
-    />
+    <picture>
+      <source
+        sizes="(max-width: 200px) 100vw, 200px"
+        sizes="200px"
+        srcset="
+          ./src/assets/logo_f73swg_c_scale,w_120.avif 120w,
+          ./src/assets/logo_f73swg_c_scale,w_200.avif 200w
+        "
+        type="image/avif"
+      />
+      <img
+        sizes="200px"
+        src="./src/assets/logo_jvsb0f_c_scale,w_200.png"
+        alt="Logo of Plantin-Moretus Museum with the compass illustration"
+        width="200"
+        height="187"
+      />
+    </picture>
+    <!-- <picture>
+      <source
+        sizes="(max-width: 200px) 100vw, 200px"
+        sizes="200px"
+        srcset="
+          ./src/assets/logo_f73swg_c_scale,w_120.avif 120w,
+          ./src/assets/logo_f73swg_c_scale,w_200.avif 200w
+        "
+        type="image/avif"
+      />
+      <img
+        sizes="(max-width: 600px) 100vw, 200px"
+        src="./src/assets/logo_jvsb0f_c_scale,w_200.png"
+        alt="Logo of Plantin-Moretus Museum with the compass illustration"
+        width="200"
+        height="187"
+      />
+    </picture> -->
     <h1>Hello, Plantin!</h1>
     <p>test</p>
   </body>
