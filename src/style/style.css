@@ -10,13 +10,16 @@ html {
 :root {
   --c-accent: #b62020;
 
-  --fs-sm: clamp(0.9rem, 5.42vi + -0.5rem, 6rem);
-  --fs-base: clamp(1.13rem, 7.3vi + -0.76rem, 8rem);
-  --fs-md: clamp(1.41rem, 9.84vi + -1.14rem, 10.66rem);
-  --fs-lg: clamp(1.76rem, 13.23vi + -1.67rem, 14.22rem);
-  --fs-xl: clamp(2.2rem, 17.8vi + -2.41rem, 18.95rem);
-  --fs-xxl: clamp(2.75rem, 23.92vi + -3.44rem, 25.26rem);
-  --fs-xxxl: clamp(3.43rem, 32.12vi + -4.88rem, 33.67rem);
+  --step--2: clamp(0.7813rem, 0.7321rem + 0.1899vw, 0.96rem);
+  --step--1: clamp(0.9375rem, 0.8653rem + 0.2789vw, 1.2rem);
+  --step-0: clamp(1.125rem, 1.0219rem + 0.3984vw, 1.5rem);
+  --step-1: clamp(1.35rem, 1.2057rem + 0.5578vw, 1.875rem);
+  --step-2: clamp(1.62rem, 1.421rem + 0.7689vw, 2.3438rem);
+  --step-3: clamp(1.944rem, 1.673rem + 1.0472vw, 2.9297rem);
+  --step-4: clamp(2.3328rem, 1.9674rem + 1.4123vw, 3.6621rem);
+  --step-5: clamp(2.7994rem, 2.3105rem + 1.8893vw, 4.5776rem);
+  --step-6: clamp(3.3592rem, 2.7097rem + 2.5103vw, 5.722rem);
+  --step-7: clamp(4.0311rem, 3.173rem + 3.3163vw, 7.1526rem);
 }
 
 img {
@@ -39,12 +42,13 @@ body {
   font-family: "garamond-premier-pro-subhead", serif;
   font-weight: 400;
   font-style: normal;
+  font-size: var(--step-0);
 }
 
 h1 {
   font-family: arsenica-variable, sans-serif;
   font-weight: 200;
-  font-size: var(--fs-base);
+  font-size: var(--step-7);
   color: var(--c-accent);
   font-weight: 500;
 }
