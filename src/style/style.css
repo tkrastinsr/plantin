@@ -393,10 +393,74 @@ h2 {
   font-weight: 600;
 }
 
-.chapter-one__ending p{
+.chapter-one__ending p {
   color: var(--c-white);
   font-weight: 600;
   font-size: var(--step-1);
+}
+
+.ship__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 60vh;
+}
+
+.ship__container picture {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.ship__container picture:nth-child(2) {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.ship {
+  width: 100%;
+  position: relative;
+  animation: swim 8s infinite ease-in-out;
+}
+
+@keyframes swim {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(10px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.ship--flipped {
+  width: 80%;
+  position: relative;
+  transform: scaleX(-1);
+  animation: swim-flipped 6s infinite ease-in-out;
+}
+
+@keyframes swim-flipped {
+  0% {
+    transform: scaleX(-1) translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: scaleX(-1) translateY(-10px) rotate(2deg);
+  }
+  50% {
+    transform: scaleX(-1) translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: scaleX(-1) translateY(10px) rotate(-2deg);
+  }
+  100% {
+    transform: scaleX(-1) translateY(0) rotate(0deg);
+  }
 }
 
 @media only screen and (min-width: 24rem) {
