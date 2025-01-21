@@ -42,9 +42,10 @@ img {
 
 body {
   font-family: "garamond-premier-pro-subhead", serif;
+  color: var(--c-black);
   font-weight: 400;
   font-style: normal;
-  font-size: var(--step-0);
+  font-size: var(--step-1);
 }
 
 main {
@@ -85,7 +86,7 @@ h1 {
   right: 0px;
 }
 
-.burger-menu--opened{
+.burger-menu--opened {
   position: static;
 }
 
@@ -183,6 +184,7 @@ h1 {
 }
 
 .menu-visit__button {
+  font-size: var(--step-0);
   margin-block: 2rem 1rem;
   display: grid;
   justify-content: center;
@@ -226,7 +228,74 @@ h1 {
   color: var(--c-accent);
 }
 
-@media only screen and (min-width: 26rem) {
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.hero__image {
+  grid-area: 1 / 1 / 2 / 2;
+  margin-inline-start: -5rem;
+  margin-block-start: 9rem;
+  width: 70%;
+}
+
+.hero__title {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.scroll-down {
+  font-size: var(--step-0);
+  text-align: center;
+  background-image: url("./../assets/transitionink.webp");
+  background-position: bottom;
+  background-size: cover;
+  grid-area: 2 / 1 / 3 / 2;
+  padding-block: 2rem 10rem;
+}
+
+.intro {
+  background-color: var(--c-black);
+  color: var(--c-white);
+}
+
+.intro__quote {
+  font-size: var(--step-5);
+  margin-inline-start: 1rem;
+  padding-inline-start: 1rem;
+  font-weight: 500;
+  border-left: 2px solid var(--c-accent);
+}
+
+.red {
+  color: var(--c-accent);
+}
+
+.italic{
+  font-style: italic
+}
+
+.intro__quote-caption{
+  font-size: var(--step-0);
+  font-weight: 400;
+  margin-inline-start: 2rem;
+  margin-block: 0.5rem;
+}
+
+.bigger{
+  font-size: var(--step-4);
+}
+
+.intro p{
+  margin-block-end: 1.5rem;
+}
+
+.highlight{
+  font-weight: 700;
+  color: var(--c-accent);
+}
+
+@media only screen and (min-width: 24rem) {
   .header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -239,7 +308,7 @@ h1 {
   }
 }
 
-@media screen and (min-width: 30rem) {
+@media screen and (min-width: 40rem) {
   .nav {
     display: none;
   }
