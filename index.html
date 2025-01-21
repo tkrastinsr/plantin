@@ -15,7 +15,7 @@
       <div class="header">
         <picture class="logo-image">
           <source
-            sizes="(min-width: 720px) 200px, (min-width: 420px) calc(26.43vw + 15px), 200px"
+            sizes="(min-width: 720px) 200px, (min-width: 400px) calc(26.67vw + 13px), 200px"
             srcset="
               ./src/assets/logo_f73swg_c_scale,w_120.avif 120w,
               ./src/assets/logo_f73swg_c_scale,w_200.avif 200w
@@ -23,7 +23,7 @@
             type="image/avif"
           />
           <img
-            sizes="(min-width: 720px) 200px, (min-width: 420px) calc(26.43vw + 15px), 200px"
+            sizes="(min-width: 720px) 200px, (min-width: 400px) calc(26.67vw + 13px), 200px"
             srcset="
               ./src/assets/logo_jvsb0f_c_scale,w_120.png 120w,
               ./src/assets/logo_jvsb0f_c_scale,w_200.png 200w
@@ -136,7 +136,7 @@
 
         <picture class="hero__image">
           <source
-            sizes="(max-width: 492px) 100vw, 492px"
+            sizes="(min-width: 760px) 492px, calc(64.09vw + 18px)"
             srcset="
               ./src/assets/heroimg_chnxjw_c_scale,w_300.avif 300w,
               ./src/assets/heroimg_chnxjw_c_scale,w_492.avif 492w
@@ -144,7 +144,7 @@
             type="image/avif"
           />
           <img
-            sizes="(max-width: 492px) 100vw, 492px"
+            sizes="(min-width: 760px) 492px, calc(64.09vw + 18px)"
             srcset="
               ./src/assets/heroimg_e7xlt1_c_scale,w_300.png 300w,
               ./src/assets/heroimg_e7xlt1_c_scale,w_400.png 400w,
@@ -180,6 +180,7 @@
             would reshape the life of a man destined to change printing of books
             as we know them today.
           </p>
+          <hr />
           <p>
             It was a period where cities flourished, including the bustling port
             city of Antwerp, the biggest commercial center in this part of
@@ -188,8 +189,57 @@
         </div>
       </div>
       <section>
-        <h2>Chapter 1</h2>
-        <p>Antwerpen</p>
+        <div class="background__black chapter-two__title">
+          <h2>Chapter 1</h2>
+          <p class="chapter__title">
+            <span class="chapter__title--bold">A</span>ntwerpen
+          </p>
+        </div>
+
+        <div class="antwerp-image__container">
+          <picture>
+            <source
+              sizes="(max-width: 1920px) 100vw, 1920px"
+              srcset="
+                ./src/assets/antwerp_tp14t9_c_scale,w_600.avif   600w,
+                ./src/assets/antwerp_tp14t9_c_scale,w_811.avif   811w,
+                ./src/assets/antwerp_tp14t9_c_scale,w_989.avif   989w,
+                ./src/assets/antwerp_tp14t9_c_scale,w_1128.avif 1128w,
+                ./src/assets/antwerp_tp14t9_c_scale,w_1266.avif 1266w,
+                ./src/assets/antwerp_tp14t9_c_scale,w_1398.avif 1398w,
+                ./src/assets/antwerp_tp14t9_c_scale,w_1522.avif 1522w,
+                ./src/assets/antwerp_tp14t9_c_scale,w_1639.avif 1639w,
+                ./src/assets/antwerp_tp14t9_c_scale,w_1743.avif 1743w,
+                ./src/assets/antwerp_tp14t9_c_scale,w_1886.avif 1886w,
+                ./src/assets/antwerp_tp14t9_c_scale,w_1900.avif 1900w,
+                ./src/assets/antwerp_tp14t9_c_scale,w_1920.avif 1920w
+              "
+              type="image/avif"
+            />
+            <img
+              class="antwerp-image"
+              sizes="(max-width: 1920px) 100vw, 1920px"
+              srcset="
+                ./src/assets/antwerp_axxpgm_c_scale,w_600.png   600w,
+                ./src/assets/antwerp_axxpgm_c_scale,w_741.png   741w,
+                ./src/assets/antwerp_axxpgm_c_scale,w_861.png   861w,
+                ./src/assets/antwerp_axxpgm_c_scale,w_972.png   972w,
+                ./src/assets/antwerp_axxpgm_c_scale,w_1070.png 1070w,
+                ./src/assets/antwerp_axxpgm_c_scale,w_1164.png 1164w,
+                ./src/assets/antwerp_axxpgm_c_scale,w_1255.png 1255w,
+                ./src/assets/antwerp_axxpgm_c_scale,w_1338.png 1338w,
+                ./src/assets/antwerp_axxpgm_c_scale,w_1422.png 1422w,
+                ./src/assets/antwerp_axxpgm_c_scale,w_1487.png 1487w,
+                ./src/assets/antwerp_axxpgm_c_scale,w_1615.png 1615w,
+                ./src/assets/antwerp_axxpgm_c_scale,w_1920.png 1920w
+              "
+              src="./src/assets/antwerp_axxpgm_c_scale,w_1920.png"
+              alt="A sketch illustration of old Antwerp skyline with boats swimming in the foreground"
+              width="1920"
+              height="850"
+            />
+          </picture>
+        </div>
         <section>
           <h3>Fill up the bag with coins</h3>
           <p>Hold and aim so that money falls in the bag</p>

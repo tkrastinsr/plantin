@@ -84,6 +84,7 @@ h1 {
   padding-block-start: 2rem; */
   position: fixed;
   right: 0px;
+  z-index: 1;
 }
 
 .burger-menu--opened {
@@ -271,28 +272,82 @@ h1 {
   color: var(--c-accent);
 }
 
-.italic{
-  font-style: italic
+.italic {
+  font-style: italic;
 }
 
-.intro__quote-caption{
+.intro p {
+  padding-block-end: 1.5rem;
+}
+
+.intro__quote-caption {
   font-size: var(--step-0);
   font-weight: 400;
   margin-inline-start: 2rem;
-  margin-block: 0.5rem;
+  margin-block-start: 0.5rem;
+  margin-block-end: 2rem;
 }
 
-.bigger{
+.bigger {
   font-size: var(--step-4);
 }
 
-.intro p{
-  margin-block-end: 1.5rem;
-}
-
-.highlight{
+.highlight {
   font-weight: 700;
   color: var(--c-accent);
+}
+
+.intro hr {
+  border: 0;
+  height: 2px;
+  background: var(--c-accent);
+  margin-block: 3rem;
+  margin-inline: 1%;
+  width: 60%;
+}
+
+.antwerp-image__container {
+  width: 100%;
+  height: 40vh; /* Full viewport height */
+  overflow: hidden; /* Ensure cropped parts aren't visible */
+  position: relative;
+  /* background-image: linear-gradient(var(--c-black) 50%, var(--c-white) 50%); */
+}
+
+.antwerp-image {
+  width: 100%;
+  height: 100%; /* Ensure the image fills the container */
+  object-fit: cover; /* Ensures it covers the container */
+  object-position: 90% center; /* Keeps the center of the image visible */
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+h2 {
+  font-size: var(--step-0);
+  color: var(--c-accent);
+  font-weight: 400;
+}
+
+.chapter__title {
+  font-size: var(--step-7);
+  color: var(--c-accent);
+  font-family: arsenica-variable, sans-serif;
+  font-variation-settings: "wght" 300, "opsz" 1000;
+}
+
+.chapter__title--bold {
+  font-variation-settings: "wght" 600, "opsz" 1000;
+}
+
+.background__black {
+  background-color: var(--c-black);
+}
+
+.chapter-two__title {
+  padding-inline: 10%;
+  padding-block-start: 2rem;
+  margin-block-end: -40%;
+  padding-block-end: 4rem;
 }
 
 @media only screen and (min-width: 24rem) {
@@ -337,5 +392,12 @@ h1 {
 
   .nav__link {
     padding-inline: 2rem;
+  }
+  .antwerp-image {
+    width: 200%; /* Make the image larger than its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop to container */
+    object-position: center; /* Focus on the center of the image */
+    transform: scale(1.1); /* Optional: slightly zoom in for effect */
   }
 }
