@@ -496,26 +496,69 @@ h2 {
   border-left: 2px solid var(--c-accent);
 }
 
-.chest__top{
+.chest__top {
   margin-block-start: -5rem;
 }
 
-.background__dark{
+.background__dark {
   background-color: var(--c-black);
   color: var(--c-white);
 }
 
-.press-image{
+.press-image {
   width: 80%;
   margin-inline-start: -3rem;
   margin-block-end: 7rem;
 }
 
-.title__section{
+.title__section {
+  margin-block-end: 3rem;
   margin-inline: 10%;
   padding-block-start: 8rem;
   padding-block-end: 1rem;
   border-bottom: solid 2px var(--c-accent);
+}
+
+.map__caption {
+  color: #676767;
+  font-size: var(--step-0);
+  font-weight: 700;
+}
+
+.sub__title {
+  margin-block-start: 3rem;
+  margin-block-end: 1rem;
+  margin-inline-start: 3rem;
+  font-family: "arsenica-variable", sans-serif;
+  font-variation-settings: "wght" 300, "opsz" 1000;
+  color: var(--c-accent);
+  font-size: var(--step-5);
+  border-bottom: solid 2px var(--c-white);
+}
+
+.align__right {
+  text-align: end;
+}
+
+.chapter-two__quotes {
+  font-family: "arsenica-variable", sans-serif;
+  font-variation-settings: "wght" 300, "opsz" 1000;
+  text-align: center;
+  /* background-image: linear-gradient(var(--c-black) 29%, var(--c-white) 29%); */
+  font-size: var(--step-3);
+  margin-block: 40%;
+}
+
+.chapter-two__quotes p{
+  margin-block: 4rem;
+}
+
+.background__white{
+  background-color: var(--c-white);
+}
+
+.black {
+  color: var(--c-black);
 }
 
 @media only screen and (min-width: 24rem) {
