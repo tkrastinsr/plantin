@@ -15,7 +15,7 @@
       <div class="header">
         <picture class="logo-image">
           <source
-            sizes="(max-width: 200px) 100vw, 200px"
+            sizes="(min-width: 720px) 200px, (min-width: 420px) calc(26.43vw + 15px), 200px"
             srcset="
               ./src/assets/logo_f73swg_c_scale,w_120.avif 120w,
               ./src/assets/logo_f73swg_c_scale,w_200.avif 200w
@@ -23,7 +23,11 @@
             type="image/avif"
           />
           <img
-            sizes="200px"
+            sizes="(min-width: 720px) 200px, (min-width: 420px) calc(26.43vw + 15px), 200px"
+            srcset="
+              ./src/assets/logo_jvsb0f_c_scale,w_120.png 120w,
+              ./src/assets/logo_jvsb0f_c_scale,w_200.png 200w
+            "
             src="./src/assets/logo_jvsb0f_c_scale,w_200.png"
             alt="Logo of Plantin-Moretus Museum with the compass illustration"
             width="200"
@@ -67,7 +71,7 @@
             </button>
             <picture class="nav__logo-image">
               <source
-                sizes="(max-width: 200px) 100vw, 200px"
+                sizes="41px"
                 srcset="
                   ./src/assets/logo_f73swg_c_scale,w_120.avif 120w,
                   ./src/assets/logo_f73swg_c_scale,w_200.avif 200w
@@ -75,7 +79,11 @@
                 type="image/avif"
               />
               <img
-                sizes="200px"
+                sizes="41px"
+                srcset="
+                  ./src/assets/logo_jvsb0f_c_scale,w_120.png 120w,
+                  ./src/assets/logo_jvsb0f_c_scale,w_200.png 200w
+                "
                 src="./src/assets/logo_jvsb0f_c_scale,w_200.png"
                 alt="Logo of Plantin-Moretus Museum with the compass illustration"
                 width="200"
@@ -115,10 +123,39 @@
           </nav>
         </div>
       </div>
-      <div class="mobile__container">
-        <h1>The Man <br />Who Wrote <br /><span class="hero__title--right">Our History <br />With Ink</span></h1>
-      </div>
-      <p>Scroll to Explore</p>
+      <section class="hero">
+        <div class="mobile__container">
+          <h1>
+            The Man <br />Who Wrote <br /><span class="hero__title--right"
+              >Our History <br />With Ink</span
+            >
+          </h1>
+        </div>
+        <picture>
+          <source
+            sizes="(max-width: 492px) 100vw, 492px"
+            srcset="
+              ./src/assets/heroimg_chnxjw_c_scale,w_300.avif 300w,
+              ./src/assets/heroimg_chnxjw_c_scale,w_492.avif 492w
+            "
+            type="image/avif"
+          />
+          <img
+            sizes="(max-width: 492px) 100vw, 492px"
+            srcset="
+              ./src/assets/heroimg_e7xlt1_c_scale,w_300.png 300w,
+              ./src/assets/heroimg_e7xlt1_c_scale,w_400.png 400w,
+              ./src/assets/heroimg_e7xlt1_c_scale,w_480.png 480w,
+              ./src/assets/heroimg_e7xlt1_c_scale,w_492.png 492w
+            "
+            src="./src/assets/heroimg_e7xlt1_c_scale,w_492.png"
+            alt="black and white cut-out image of a aman with a red geometrical compass behind him"
+            width="492"
+            height="577"
+          />
+        </picture>
+        <p>Scroll to Explore</p>
+      </section>
       <p>"This is not a man of flesh and blood; this is a spirit"</p>
       <p>- Arias Montanus once remarked about Christophe Plantin.</p>
       <p>
@@ -449,6 +486,6 @@
         <p>museum.plantin.moretus@antwerpen.be</p>
       </div>
     </footer>
-    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/menu.js" type="module"></script>
   </body>
 </html>
