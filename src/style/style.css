@@ -54,10 +54,23 @@ main {
 
 h1 {
   font-family: arsenica-variable, sans-serif;
-  font-weight: 200;
-  font-size: var(--step-7);
-  color: var(--c-accent);
+  font-variation-settings: "wght" 300, "opsz" 1000;
+  font-size: var(--step-6);
+  color: var(--c-black);
   font-weight: 500;
+  margin-block-start: 2rem;
+  line-height: 3rem;
+}
+
+.hero__title--right {
+  display: block;
+  text-align: end;
+  margin-block-start: 1rem;
+}
+
+.mobile__container {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .header {
@@ -68,7 +81,14 @@ h1 {
   grid-area: 1 / 1 / 2 / 3;
   /* align-self: center;
   padding-block-start: 2rem; */
+  position: fixed;
+  right: 0px;
 }
+
+.burger-menu--opened{
+  position: static;
+}
+
 .nav a:any-link {
   /* color: var(--c-black); */
   text-decoration: none;
