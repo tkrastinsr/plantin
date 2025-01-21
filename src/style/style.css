@@ -307,6 +307,7 @@ h1 {
 }
 
 .antwerp-image__container {
+  grid-area: 1 / 1 / 2 / 2;
   width: 100%;
   height: 40vh; /* Full viewport height */
   overflow: hidden; /* Ensure cropped parts aren't visible */
@@ -339,15 +340,16 @@ h2 {
   font-variation-settings: "wght" 600, "opsz" 1000;
 }
 
-.background__black {
-  background-color: var(--c-black);
+.chapter-one__title {
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: center;
+  padding-inline: 10%;
+  z-index: 1;
 }
 
-.chapter-two__title {
-  padding-inline: 10%;
-  padding-block-start: 2rem;
-  margin-block-end: -40%;
-  padding-block-end: 4rem;
+.chapter-one__intro-container {
+  display: grid;
+  background-color: var(--c-black);
 }
 
 @media only screen and (min-width: 24rem) {
