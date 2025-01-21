@@ -80,8 +80,6 @@ h1 {
 
 .burger-menu {
   grid-area: 1 / 1 / 2 / 3;
-  /* align-self: center;
-  padding-block-start: 2rem; */
   position: fixed;
   right: 0px;
   z-index: 1;
@@ -92,14 +90,12 @@ h1 {
 }
 
 .nav a:any-link {
-  /* color: var(--c-black); */
   text-decoration: none;
 }
 
 .nav {
   max-width: 100%;
   display: grid;
-  /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -309,18 +305,17 @@ h1 {
 .antwerp-image__container {
   grid-area: 1 / 1 / 2 / 2;
   width: 100%;
-  height: 40vh; /* Full viewport height */
-  overflow: hidden; /* Ensure cropped parts aren't visible */
+  height: 40vh;
+  overflow: hidden;
   position: relative;
-  /* background-image: linear-gradient(var(--c-black) 50%, var(--c-white) 50%); */
 }
 
 .antwerp-image {
   width: 100%;
-  height: 100%; /* Ensure the image fills the container */
-  object-fit: cover; /* Ensures it covers the container */
-  object-position: 90% center; /* Keeps the center of the image visible */
-  transition: transform 0.3s ease; /* Smooth scaling effect */
+  height: 100%;
+  object-fit: cover;
+  object-position: 90% center;
+  transition: transform 0.3s ease;
 }
 
 h2 {
@@ -330,10 +325,12 @@ h2 {
 }
 
 .chapter__title {
+  margin-block-start: 1rem;
   font-size: var(--step-7);
   color: var(--c-accent);
   font-family: arsenica-variable, sans-serif;
   font-variation-settings: "wght" 300, "opsz" 1000;
+  line-height: 3.5rem;
 }
 
 .chapter__title--bold {
@@ -391,6 +388,11 @@ h2 {
 .small__quote {
   font-size: var(--step-2);
   font-weight: 600;
+}
+
+.chapter-one__ending {
+  background-color: var(--c-black);
+  margin-block-start: 7rem;
 }
 
 .chapter-one__ending p {
@@ -463,6 +465,59 @@ h2 {
   }
 }
 
+.p__space p {
+  padding-block-end: 1.5rem;
+}
+
+.pile-image__container {
+  grid-area: 1 / 1 / 2 / 2;
+  width: 100%;
+  height: 30vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.pile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 90% center;
+  transition: transform 0.3s ease;
+}
+
+.top__space {
+  margin-block-start: 3rem;
+}
+
+.left__line {
+  padding-inline-start: 1rem;
+  padding-block-start: 1.5rem;
+  margin-block: 2rem;
+  border-left: 2px solid var(--c-accent);
+}
+
+.chest__top{
+  margin-block-start: -5rem;
+}
+
+.background__dark{
+  background-color: var(--c-black);
+  color: var(--c-white);
+}
+
+.press-image{
+  width: 80%;
+  margin-inline-start: -3rem;
+  margin-block-end: 7rem;
+}
+
+.title__section{
+  margin-inline: 10%;
+  padding-block-start: 8rem;
+  padding-block-end: 1rem;
+  border-bottom: solid 2px var(--c-accent);
+}
+
 @media only screen and (min-width: 24rem) {
   .header {
     display: grid;
@@ -507,10 +562,10 @@ h2 {
     padding-inline: 2rem;
   }
   .antwerp-image {
-    width: 200%; /* Make the image larger than its container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Crop to container */
-    object-position: center; /* Focus on the center of the image */
-    transform: scale(1.1); /* Optional: slightly zoom in for effect */
+    width: 200%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.1);
   }
 }
