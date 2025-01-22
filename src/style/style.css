@@ -555,7 +555,7 @@ h2 {
   margin-block-start: 6rem;
 }
 
-.bottom__space{
+.bottom__space {
   margin-block-end: 3rem;
 }
 
@@ -645,7 +645,7 @@ h2 {
   width: 100%;
 }
 
-.left-border{
+.left-border {
   border-left: solid 2px var(--c-accent);
   margin-inline-start: 10%;
   padding-inline-start: 1rem;
