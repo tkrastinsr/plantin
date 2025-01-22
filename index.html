@@ -1111,8 +1111,8 @@
           </picture>
         </div>
       </section>
-      <div>
-        <p>
+      <div class="printing-house__container">
+        <p class="white background__dark top__space-space printing-house__text">
           At it's very peak, De Gulden Passer
           <span class="highlight">housed more than 20 presses</span> and
           employed over 73 workers, making it one of the largest printing houses
@@ -1120,8 +1120,34 @@
           sides per day. Plantin made a printing empire starting as just a boy
           learning book binding in a little french hamlet
         </p>
+        <div class="printing-house__image">
+          <picture>
+            <source
+              sizes="(max-width: 704px) 100vw, 704px"
+              srcset="
+                ./src/assets/oldpress_acznyl_c_scale,w_400.avif 400w,
+                ./src/assets/oldpress_acznyl_c_scale,w_704.avif 704w
+              "
+              type="image/avif"
+            />
+            <img
+              sizes="(max-width: 704px) 100vw, 704px"
+              srcset="
+                ./src/assets/oldpress_voix8o_c_scale,w_400.png 400w,
+                ./src/assets/oldpress_voix8o_c_scale,w_704.png 704w
+              "
+              src="./src/assets/oldpress_voix8o_c_scale,w_704.png"
+              alt="a woodblock print of an Plantin printing press"
+              width="704"
+              height="704"
+            />
+          </picture>
+        </div>
       </div>
-      <div>
+      <div
+        class="mobile__container p__space top__space-space ending__container"
+      >
+        <hr />
         <p>
           <span class="highlight"
             ><span class="bigger">B</span>ut what became of Christophe Plantin's
@@ -1139,8 +1165,12 @@
           of a real <span class="highlight">Gutenberg Bible</span>?
         </p>
       </div>
-      <section>
-        <h2>Plantin - Moretus Museum</h2>
+      <section class="museum__container top__space-space">
+        <h2 class="museum__name">
+          <span class="museum__name--bold">Plantin</span> -<br />
+          <span class="museum__name--bold">Moretus</span><br />Museum
+        </h2>
+        <hr />
         <p>
           <span class="bigger">W</span>e invite you to explore the very same
           rooms where Plantin's presses once hummed and visit us in the Museum
@@ -1149,25 +1179,257 @@
             >See you soon!</span
           >
         </p>
+        <div class="menu-visit__button-black top__space-space">
+          <a href="https://museumplantinmoretus.be/en" target="_blank"
+            >Visit Museum</a
+          >
+        </div>
       </section>
-      <p>
-        “In his Golden Compass, we find a symbol not just of his trade but of
-        his unwavering vision and ingenuity.”
-      </p>
-      <p>“Labore et Constantia”</p>
+      <div class="ending-quote__container top__space-space">
+        <p class="ending-quote__text">
+          “In his Golden Compass, we find a symbol not just of his trade but of
+          his unwavering vision and ingenuity.”
+        </p>
+        <div class="circle__stamp-container">
+          <picture>
+            <source
+              sizes="(max-width: 698px) 100vw, 698px"
+              srcset="
+                ./src/assets/circle_i95z6j_c_scale,w_250.avif 250w,
+                ./src/assets/circle_i95z6j_c_scale,w_625.avif 625w,
+                ./src/assets/circle_i95z6j_c_scale,w_698.avif 698w
+              "
+              type="image/avif"
+            />
+            <img
+              class="cicle__stamp"
+              sizes="(max-width: 698px) 100vw, 698px"
+              srcset="
+                ./src/assets/circle_rm0ion_c_scale,w_250.jpg 250w,
+                ./src/assets/circle_rm0ion_c_scale,w_438.jpg 438w,
+                ./src/assets/circle_rm0ion_c_scale,w_601.jpg 601w,
+                ./src/assets/circle_rm0ion_c_scale,w_698.jpg 698w
+              "
+              src="./src/assets/circle_rm0ion_c_scale,w_698.jpg"
+              alt="a delicate stamp illustration of astrology signs forming a geometrical circle"
+              width="698"
+              height="563"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="ending__container">
+        <div class="ending__letter">
+          <picture>
+            <source
+              sizes="(max-width: 520px) 100vw, 520px"
+              srcset="
+                ./src/assets/l_jxj4ht_c_scale,w_200.avif 200w,
+                ./src/assets/l_jxj4ht_c_scale,w_520.avif 520w
+              "
+              type="image/avif"
+            />
+            <img
+              sizes="(max-width: 520px) 100vw, 520px"
+              srcset="
+                ./src/assets/l_uvjv09_c_scale,w_200.png 200w,
+                ./src/assets/l_uvjv09_c_scale,w_319.png 319w,
+                ./src/assets/l_uvjv09_c_scale,w_411.png 411w,
+                ./src/assets/l_uvjv09_c_scale,w_494.png 494w,
+                ./src/assets/l_uvjv09_c_scale,w_520.png 520w
+              "
+              src="./src/assets/l_uvjv09_c_scale,w_520.png"
+              alt="image of the letter L symbolysing the motto Labore with black ink exploding from it"
+              width="520"
+              height="614"
+            />
+          </picture>
+        </div>
+        <p class="ending__words">“Labore et Constantia”</p>
+        <div class="ending__museum-image">
+          <picture>
+            <source
+              sizes="(max-width: 1920px) 100vw, 1920px"
+              srcset="
+                ./src/assets/museum-garden_el8hjo_c_scale,w_1200.avif 1200w,
+                ./src/assets/museum-garden_el8hjo_c_scale,w_1318.avif 1318w,
+                ./src/assets/museum-garden_el8hjo_c_scale,w_1334.avif 1334w,
+                ./src/assets/museum-garden_el8hjo_c_scale,w_1586.avif 1586w,
+                ./src/assets/museum-garden_el8hjo_c_scale,w_1694.avif 1694w,
+                ./src/assets/museum-garden_el8hjo_c_scale,w_1901.avif 1901w,
+                ./src/assets/museum-garden_el8hjo_c_scale,w_1851.avif 1851w,
+                ./src/assets/museum-garden_el8hjo_c_scale,w_1920.avif 1920w
+              "
+              type="image/avif"
+            />
+            <img
+              sizes="(max-width: 1920px) 100vw, 1920px"
+              srcset="
+                ./src/assets/museum-garden_gl9cyh_c_scale,w_1200.png 1200w,
+                ./src/assets/museum-garden_gl9cyh_c_scale,w_1308.png 1308w,
+                ./src/assets/museum-garden_gl9cyh_c_scale,w_1411.png 1411w,
+                ./src/assets/museum-garden_gl9cyh_c_scale,w_1513.png 1513w,
+                ./src/assets/museum-garden_gl9cyh_c_scale,w_1593.png 1593w,
+                ./src/assets/museum-garden_gl9cyh_c_scale,w_1676.png 1676w,
+                ./src/assets/museum-garden_gl9cyh_c_scale,w_1765.png 1765w,
+                ./src/assets/museum-garden_gl9cyh_c_scale,w_1846.png 1846w,
+                ./src/assets/museum-garden_gl9cyh_c_scale,w_1889.png 1889w,
+                ./src/assets/museum-garden_gl9cyh_c_scale,w_1920.png 1920w
+              "
+              src="./src/assets/museum-garden_gl9cyh_c_scale,w_1920.png"
+              alt="black and white image of the Plantin-Moretus Museum with a garden in the foreground"
+              width="1920"
+              height="940"
+            />
+          </picture>
+        </div>
+        <div class="ending__circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="217"
+            height="217"
+            viewBox="0 0 217 217"
+            fill="none"
+          >
+            <circle cx="108.5" cy="108.5" r="108.5" fill="#B62020" />
+          </svg>
+        </div>
+      </div>
     </main>
     <footer>
-      <div>
-        <p>Never miss a Story</p>
-        <p>
+      <div class="logo-black__container">
+        <picture>
+          <source
+            sizes="(max-width: 302px) 100vw, 302px"
+            srcset="
+              ./src/assets/logoblack_ca69np_c_scale,w_100.avif 100w,
+              ./src/assets/logoblack_ca69np_c_scale,w_302.avif 302w
+            "
+            type="image/avif"
+          />
+          <img
+            class="logo-black__image top__space"
+            sizes="(max-width: 302px) 100vw, 302px"
+            srcset="
+              ./src/assets/logoblack_gp9qjf_c_scale,w_100.jpg 100w,
+              ./src/assets/logoblack_gp9qjf_c_scale,w_302.jpg 302w
+            "
+            src="./src/assets/logoblack_gp9qjf_c_scale,w_302.jpg"
+            alt="The logo of Plantin-Moretus Museum - hand holding compass with a banner around it in white colour"
+          />
+        </picture>
+      </div>
+      <form class="newsletter-form mobile__container top__space">
+        <label for="email" class="email__title">Never miss a Story</label>
+        <p class="newsletter-explanation">
           We will notify you as soon as another story comes out - no spam, just
-          creativity
+          creativity.
         </p>
+        <div class="newsletter__input-container">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="E-mail"
+            class="newsletter-input"
+            required
+          />
+          <button type="submit" class="newsletter-submit">&#11157;</button>
+        </div>
+      </form>
+      <div class="socials__container top__space">
+        <p class="socials__text">Let's get in touch</p>
+        <div>
+          <svg
+            class="socials__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+            fill="none"
+          >
+            <circle cx="25" cy="25" r="25" class="circle" fill="white" />
+            <path
+              d="M19 15.5V35M14.5 21.32V34.862M10 23.945V32.2355M33.217 22.4H33.25C36.9775 22.4 40 25.22 40 28.7C40 32.18 36.9775 35 33.25 35H28M33.217 22.4C33.2389 22.1671 33.2499 21.9334 33.25 21.6995C33.25 17.447 29.557 14 25 14H23.5V35M33.217 22.4C33.0607 23.9611 32.4119 25.432 31.3645 26.6"
+              stroke="#1B1B1B"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg
+            class="socials__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="51"
+            height="50"
+            viewBox="0 0 51 50"
+            fill="none"
+          >
+            <circle cx="25.2002" cy="25" r="25" class="circle" fill="white" />
+            <path
+              d="M25.2077 15C21.8702 15 18.5352 15.98 15.6514 17.9413H10.2002L12.6539 20.61C11.536 21.6286 10.7522 22.9615 10.4057 24.4337C10.0592 25.9059 10.1661 27.4485 10.7124 28.8589C11.2586 30.2692 12.2188 31.4813 13.4666 32.3359C14.7144 33.1906 16.1915 33.6478 17.7039 33.6475C19.5936 33.6487 21.4136 32.9341 22.7977 31.6475L25.2002 34.2625L27.6027 31.65C28.9855 32.9358 30.8044 33.6496 32.6927 33.6475C34.6814 33.6475 36.5887 32.8577 37.9951 31.4517C39.4016 30.0457 40.192 28.1387 40.1927 26.15C40.194 25.107 39.977 24.0753 39.5557 23.1212C39.1344 22.1671 38.5181 21.3117 37.7464 20.61L40.2002 17.9413H34.7627C31.9455 16.0232 28.6159 14.9982 25.2077 15ZM25.2002 17.45C27.1139 17.45 29.0289 17.8288 30.8302 18.5788C27.6289 19.8038 25.2002 22.6688 25.2002 26.0063C25.2002 22.6675 22.7727 19.8038 19.5702 18.5788C21.3539 17.8346 23.2675 17.4501 25.2002 17.45ZM17.7027 21.0775C18.369 21.0775 19.0288 21.2087 19.6443 21.4637C20.2599 21.7187 20.8192 22.0924 21.2904 22.5636C21.7615 23.0347 22.1353 23.594 22.3902 24.2096C22.6452 24.8252 22.7764 25.485 22.7764 26.1513C22.7764 26.8175 22.6452 27.4773 22.3902 28.0929C22.1353 28.7085 21.7615 29.2678 21.2904 29.7389C20.8192 30.2101 20.2599 30.5838 19.6443 30.8388C19.0288 31.0938 18.369 31.225 17.7027 31.225C16.3571 31.225 15.0665 30.6905 14.115 29.7389C13.1635 28.7874 12.6289 27.4969 12.6289 26.1513C12.6289 24.8056 13.1635 23.5151 14.115 22.5636C15.0665 21.6121 16.3571 21.0775 17.7027 21.0775ZM32.6927 21.08C33.3587 21.0798 34.0183 21.2107 34.6338 21.4654C35.2492 21.72 35.8085 22.0934 36.2796 22.5642C36.7507 23.035 37.1245 23.594 37.3797 24.2092C37.6348 24.8245 37.7662 25.484 37.7664 26.15C37.7667 26.8161 37.6357 27.4756 37.3811 28.0911C37.1264 28.7065 36.753 29.2658 36.2823 29.7369C35.8115 30.2081 35.2525 30.5819 34.6372 30.837C34.022 31.0921 33.3625 31.2235 32.6964 31.2238C31.3513 31.2243 30.0611 30.6904 29.1095 29.7396C28.158 28.7888 27.6232 27.4989 27.6227 26.1538C27.6222 24.8086 28.1561 23.5184 29.1069 22.5668C30.0577 21.6153 31.3475 21.0805 32.6927 21.08ZM17.7027 23.4925C16.9972 23.4925 16.3206 23.7728 15.8218 24.2716C15.3229 24.7704 15.0427 25.447 15.0427 26.1525C15.0427 26.858 15.3229 27.5346 15.8218 28.0334C16.3206 28.5323 16.9972 28.8125 17.7027 28.8125C18.4082 28.8125 19.0848 28.5323 19.5836 28.0334C20.0824 27.5346 20.3627 26.858 20.3627 26.1525C20.3627 25.447 20.0824 24.7704 19.5836 24.2716C19.0848 23.7728 18.4082 23.4925 17.7027 23.4925ZM32.6927 23.4925C31.9872 23.4925 31.3106 23.7728 30.8118 24.2716C30.3129 24.7704 30.0327 25.447 30.0327 26.1525C30.0327 26.858 30.3129 27.5346 30.8118 28.0334C31.3106 28.5323 31.9872 28.8125 32.6927 28.8125C33.3982 28.8125 34.0748 28.5323 34.5736 28.0334C35.0724 27.5346 35.3527 26.858 35.3527 26.1525C35.3527 25.447 35.0724 24.7704 34.5736 24.2716C34.0748 23.7728 33.3982 23.4925 32.6927 23.4925Z"
+              fill="#1B1B1B"
+            />
+          </svg>
+          <svg
+            class="socials__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="51"
+            height="50"
+            viewBox="0 0 51 50"
+            fill="none"
+          >
+            <circle cx="25.4004" cy="25" r="25" class="circle" fill="white" />
+            <path
+              d="M27.9004 27.25H31.6504L33.1504 21.25H27.9004V18.25C27.9004 16.705 27.9004 15.25 30.9004 15.25H33.1504V10.21C32.6614 10.1455 30.8149 10 28.8649 10C24.7924 10 21.9004 12.4855 21.9004 17.05V21.25H17.4004V27.25H21.9004V40H27.9004V27.25Z"
+              fill="#1B1B1B"
+            />
+          </svg>
+          <svg
+            class="socials__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="51"
+            height="50"
+            viewBox="0 0 51 50"
+            fill="none"
+          >
+            <circle cx="25.5996" cy="25" r="25" class="circle" fill="white" />
+            <path
+              d="M21.1596 39.31C22.5996 39.745 24.0546 40 25.5996 40C29.5779 40 33.3932 38.4196 36.2062 35.6066C39.0193 32.7936 40.5996 28.9782 40.5996 25C40.5996 23.0302 40.2116 21.0796 39.4578 19.2597C38.704 17.4399 37.5991 15.7863 36.2062 14.3934C34.8133 13.0005 33.1597 11.8956 31.3399 11.1418C29.52 10.388 27.5694 10 25.5996 10C23.6298 10 21.6792 10.388 19.8594 11.1418C18.0395 11.8956 16.3859 13.0005 14.993 14.3934C12.18 17.2064 10.5996 21.0218 10.5996 25C10.5996 31.375 14.6046 36.85 20.2596 39.01C20.1246 37.84 19.9896 35.905 20.2596 34.57L21.9846 27.16C21.9846 27.16 21.5496 26.29 21.5496 24.91C21.5496 22.84 22.8396 21.295 24.3096 21.295C25.5996 21.295 26.1996 22.24 26.1996 23.455C26.1996 24.745 25.3446 26.59 24.9096 28.36C24.6546 29.83 25.6896 31.12 27.1896 31.12C29.8596 31.12 31.9296 28.27 31.9296 24.25C31.9296 20.65 29.3496 18.19 25.6446 18.19C21.4146 18.19 18.9246 21.34 18.9246 24.655C18.9246 25.945 19.3446 27.25 20.0346 28.105C20.1696 28.195 20.1696 28.315 20.1246 28.54L19.6896 30.175C19.6896 30.43 19.5246 30.52 19.2696 30.34C17.3496 29.5 16.2396 26.77 16.2396 24.565C16.2396 19.825 19.5996 15.52 26.0796 15.52C31.2396 15.52 35.2596 19.225 35.2596 24.145C35.2596 29.305 32.0646 33.445 27.4896 33.445C26.0346 33.445 24.6096 32.665 24.0996 31.75L23.0946 35.305C22.7496 36.595 21.8046 38.32 21.1596 39.355V39.31Z"
+              fill="#1B1B1B"
+            />
+          </svg>
+          <svg
+            class="socials__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="51"
+            height="50"
+            viewBox="0 0 51 50"
+            fill="none"
+          >
+            <circle cx="25.7998" cy="25" r="25" class="circle" fill="white" />
+            <path
+              d="M22.7998 30L30.5848 25.5L22.7998 21V30ZM40.1398 18.255C40.3348 18.96 40.4698 19.905 40.5598 21.105C40.6648 22.305 40.7098 23.34 40.7098 24.24L40.7998 25.5C40.7998 28.785 40.5598 31.2 40.1398 32.745C39.7648 34.095 38.8948 34.965 37.5448 35.34C36.8398 35.535 35.5498 35.67 33.5698 35.76C31.6198 35.865 29.8348 35.91 28.1848 35.91L25.7998 36C19.5148 36 15.5998 35.76 14.0548 35.34C12.7048 34.965 11.8348 34.095 11.4598 32.745C11.2648 32.04 11.1298 31.095 11.0398 29.895C10.9348 28.695 10.8898 27.66 10.8898 26.76L10.7998 25.5C10.7998 22.215 11.0398 19.8 11.4598 18.255C11.8348 16.905 12.7048 16.035 14.0548 15.66C14.7598 15.465 16.0498 15.33 18.0298 15.24C19.9798 15.135 21.7648 15.09 23.4148 15.09L25.7998 15C32.0848 15 35.9998 15.24 37.5448 15.66C38.8948 16.035 39.7648 16.905 40.1398 18.255Z"
+              fill="black"
+            />
+          </svg>
+          <svg
+            class="socials__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+            fill="none"
+          >
+            <circle cx="25" cy="25" r="25" class="circle" fill="white" />
+            <path
+              d="M26.542 10C28.2294 10.0045 29.0859 10.0135 29.8254 10.0345L30.1163 10.045C30.4523 10.057 30.7838 10.072 31.1843 10.09C32.7802 10.165 33.8691 10.417 34.8246 10.7875C35.8145 11.1684 36.6485 11.6844 37.4825 12.5169C38.2455 13.2664 38.8357 14.1735 39.2119 15.1747C39.5824 16.1302 39.8343 17.2191 39.9093 18.8166C39.9273 19.2155 39.9423 19.547 39.9543 19.8845L39.9633 20.1755C39.9858 20.9135 39.9948 21.7699 39.9978 23.4573L39.9993 24.5763V26.5412C40.003 27.6352 39.9915 28.7293 39.9648 29.823L39.9558 30.114C39.9438 30.4515 39.9288 30.783 39.9108 31.1819C39.8358 32.7794 39.5809 33.8668 39.2119 34.8237C38.8357 35.825 38.2455 36.7321 37.4825 37.4816C36.7329 38.2446 35.8258 38.8348 34.8246 39.211C33.8691 39.5815 32.7802 39.8335 31.1843 39.9085L30.1163 39.9535L29.8254 39.9625C29.0859 39.9835 28.2294 39.994 26.542 39.997L25.4231 39.9985H23.4597C22.3651 40.0023 21.2706 39.9908 20.1763 39.964L19.8854 39.955C19.5293 39.9415 19.1733 39.926 18.8174 39.9085C17.2215 39.8335 16.1325 39.5815 15.1756 39.211C14.1749 38.8346 13.2684 38.2444 12.5192 37.4816C11.7557 36.7322 11.165 35.8251 10.7883 34.8237C10.4178 33.8683 10.1658 32.7794 10.0908 31.1819L10.0459 30.114L10.0384 29.823C10.0107 28.7293 9.9982 27.6352 10.0009 26.5412V23.4573C9.9967 22.3633 10.0077 21.2692 10.0339 20.1755L10.0444 19.8845C10.0564 19.547 10.0713 19.2155 10.0893 18.8166C10.1643 17.2191 10.4163 16.1317 10.7868 15.1747C11.1643 14.1731 11.7561 13.266 12.5207 12.5169C13.2694 11.7542 14.1754 11.1641 15.1756 10.7875C16.1325 10.417 17.22 10.165 18.8174 10.09C19.2164 10.072 19.5494 10.057 19.8854 10.045L20.1763 10.036C21.2701 10.0093 22.3641 9.99785 23.4582 10.0015L26.542 10ZM25.0001 17.4996C23.0111 17.4996 21.1035 18.2898 19.6971 19.6962C18.2906 21.1027 17.5005 23.0102 17.5005 24.9992C17.5005 26.9883 18.2906 28.8958 19.6971 30.3023C21.1035 31.7087 23.0111 32.4989 25.0001 32.4989C26.9891 32.4989 28.8967 31.7087 30.3031 30.3023C31.7096 28.8958 32.4997 26.9883 32.4997 24.9992C32.4997 23.0102 31.7096 21.1027 30.3031 19.6962C28.8967 18.2898 26.9891 17.4996 25.0001 17.4996ZM25.0001 20.4995C25.591 20.4994 26.1762 20.6157 26.7221 20.8417C27.2681 21.0678 27.7642 21.3991 28.1821 21.8169C28.6 22.2347 28.9316 22.7307 29.1578 23.2766C29.384 23.8225 29.5005 24.4076 29.5006 24.9985C29.5007 25.5894 29.3844 26.1746 29.1584 26.7205C28.9323 27.2665 28.601 27.7626 28.1832 28.1805C27.7654 28.5984 27.2694 28.93 26.7235 29.1562C26.1776 29.3824 25.5925 29.4989 25.0016 29.499C23.8082 29.499 22.6636 29.0249 21.8198 28.1811C20.9759 27.3372 20.5018 26.1927 20.5018 24.9992C20.5018 23.8058 20.9759 22.6613 21.8198 21.8174C22.6636 20.9736 23.8082 20.4995 25.0016 20.4995M32.8762 15.2497C32.3789 15.2497 31.9021 15.4473 31.5504 15.7989C31.1988 16.1505 31.0013 16.6274 31.0013 17.1246C31.0013 17.6219 31.1988 18.0988 31.5504 18.4504C31.9021 18.802 32.3789 18.9995 32.8762 18.9995C33.3735 18.9995 33.8503 18.802 34.202 18.4504C34.5536 18.0988 34.7511 17.6219 34.7511 17.1246C34.7511 16.6274 34.5536 16.1505 34.202 15.7989C33.8503 15.4473 33.3735 15.2497 32.8762 15.2497Z"
+              fill="#1B1B1B"
+            />
+          </svg>
+        </div>
       </div>
-      <div>
-        <p>Let's get in touch</p>
-      </div>
-      <div>
+      <div class="contacts__container">
         <p>Vrijdagmarkt 22</p>
         <p>2000 Antwerp, Belgium</p>
         <p>+32 (0)3 221 14 50</p>
