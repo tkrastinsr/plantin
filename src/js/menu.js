@@ -24,7 +24,7 @@ const init = () => {
     $navVisit.classList.remove("visually-hidden");
     $navName.classList.remove("visually-hidden");
     $navLogo.classList.remove("visually-hidden");
-    $burgerMenu.classList.add("burger-menu--opened")
+    $burgerMenu.classList.add("burger-menu--opened");
     $nav.classList.add("nav--fixed");
   };
 
@@ -35,7 +35,7 @@ const init = () => {
     $navVisit.classList.add("visually-hidden");
     $navName.classList.add("visually-hidden");
     $navLogo.classList.add("visually-hidden");
-        $burgerMenu.classList.remove("burger-menu--opened");
+    $burgerMenu.classList.remove("burger-menu--opened");
     $nav.classList.remove("nav--fixed");
   };
 
