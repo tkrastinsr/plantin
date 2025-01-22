@@ -422,6 +422,64 @@ h2 {
   animation: swim 8s infinite ease-in-out;
 }
 
+.labore {
+  display: block;
+  font-family: "arsenica-variable", sans-serif;
+  font-variation-settings: "wght" 600, "opsz" 1000;
+  font-size: var(--step-3);
+  margin-block-start: 4rem;
+  color: var(--c-accent);
+}
+
+.labore--english {
+  display: block;
+  margin-inline: auto 5%;
+  width: 15rem;
+  text-align: center;
+  background-color: var(--c-accent);
+  color: var(--c-white);
+  padding-block: 0.5rem;
+}
+
+.compass-image {
+  mix-blend-mode: multiply;
+}
+
+.thomas-image {
+  width: 80%;
+  margin-inline-start: 2%;
+  max-width: 412px;
+}
+
+.thomas-name {
+  width: 13rem;
+  background-color: var(--c-accent);
+  color: var(--c-white);
+  text-align: center;
+  padding-block: 0.7rem;
+  margin-block-start: -1rem;
+  margin-inline-start: 1.5rem;
+}
+
+.letter {
+  font-family: "arsenica-variable", sans-serif;
+  font-variation-settings: "wght" 500, "opsz" 100;
+  font-size: var(--step-2);
+  font-style: italic;
+  margin-inline: 5rem 1rem;
+}
+
+.book__conatainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.book-one__container{
+    width: 70%;
+  align-self: center;
+  justify-self: center;
+}
+
 @keyframes swim {
   0% {
     transform: translateY(0) rotate(0deg);
@@ -489,6 +547,10 @@ h2 {
   margin-block-start: 3rem;
 }
 
+.top__space-space {
+  margin-block-start: 6rem;
+}
+
 .left__line {
   padding-inline-start: 1rem;
   padding-block-start: 1.5rem;
@@ -546,19 +608,29 @@ h2 {
   text-align: center;
   /* background-image: linear-gradient(var(--c-black) 29%, var(--c-white) 29%); */
   font-size: var(--step-3);
-  margin-block: 40%;
+  margin-block: 40% 10%;
 }
 
-.chapter-two__quotes p{
+.chapter-two__quotes p {
   margin-block: 4rem;
 }
 
-.background__white{
+.background__white {
   background-color: var(--c-white);
 }
 
 .black {
   color: var(--c-black);
+}
+
+.molds-image__container {
+  margin-block-start: 10rem;
+  width: 50%;
+  margin-inline: auto;
+}
+
+.molds-image {
+  width: 100%;
 }
 
 @media only screen and (min-width: 24rem) {
