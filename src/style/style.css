@@ -906,17 +906,11 @@ footer {
 
 .interaction-two__container {
   position: relative;
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  width: 500px;
-  height: 600px; */
 }
 
 .book {
   width: 100%;
   height: 100%;
-  /* grid-area: 1 / 1 / 6 / 5; */
   position: relative;
 
   display: grid;
@@ -938,11 +932,6 @@ footer {
 }
 
 .binding-points {
-  /* position: absolute;
-  top: 50px;
-  left: 50px;
-  width: 400px;
-  height: 500px; */
   position: relative;
   display: grid;
   align-items: center;
@@ -963,27 +952,23 @@ footer {
 }
 
 .circle[data-index="1"] {
-  /* top: 50px;
-  left: 100px; */
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 3 / 2 / 4 / 3;
 }
 .circle[data-index="2"] {
-  /* top: 150px;
-  left: 150px; */
-  grid-area: 1 / 2 / 2 / 3;
-}
-.circle[data-index="3"] {
-  /* top: 250px;
-  left: 200px; */
   grid-area: 2 / 1 / 3 / 2;
 }
+.circle[data-index="3"] {
+  grid-area: 1 / 2 / 2 / 3;
+}
 .circle[data-index="4"] {
-  /* top: 350px;
-  left: 250px; */
-  grid-area: 2 / 2 / 3 / 3;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .circle[data-index="5"] {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.circle[data-index="6"] {
   grid-area: 3 / 1 / 4 / 2;
 }
 

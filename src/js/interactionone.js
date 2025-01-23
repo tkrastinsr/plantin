@@ -79,7 +79,7 @@ const moveCircle = (e) => {
         //     bindingPoints.forEach((p) => (p.style.display = "none")); // Hide all points
         //   }, 500);
         // }
-        if (currentIndex === 5) {
+        if (currentIndex === 6) {
           setTimeout(() => {
             bookImage.src = "./src/assets/bok.png";
             bookImage.srcset = "./src/assets/bok.png";
