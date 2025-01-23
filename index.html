@@ -409,6 +409,54 @@
             <p class="interaction__text">
               Drag and follow the lines to bound the book
             </p>
+            <div class="interaction-two__container">
+              <div class="book">
+                <div class="book-image__container">
+                  <picture>
+                    <source
+                      sizes="(max-width: 800px) 100vw, 800px"
+                      srcset="
+                        ./src/assets/nonbinded_yvd9kd_c_scale,w_400.avif 400w,
+                        ./src/assets/nonbinded_yvd9kd_c_scale,w_651.avif 651w,
+                        ./src/assets/nonbinded_yvd9kd_c_scale,w_764.avif 764w,
+                        ./src/assets/nonbinded_yvd9kd_c_scale,w_800.avif 800w
+                      "
+                      type="image/avif"
+                    />
+                    <img
+                      class="book-image"
+                      sizes="(max-width: 800px) 100vw, 800px"
+                      srcset="
+                        ./src/assets/nonbinded_px46hv_c_scale,w_400.png 400w,
+                        ./src/assets/nonbinded_px46hv_c_scale,w_463.png 463w,
+                        ./src/assets/nonbinded_px46hv_c_scale,w_519.png 519w,
+                        ./src/assets/nonbinded_px46hv_c_scale,w_567.png 567w,
+                        ./src/assets/nonbinded_px46hv_c_scale,w_612.png 612w,
+                        ./src/assets/nonbinded_px46hv_c_scale,w_656.png 656w,
+                        ./src/assets/nonbinded_px46hv_c_scale,w_701.png 701w,
+                        ./src/assets/nonbinded_px46hv_c_scale,w_737.png 737w,
+                        ./src/assets/nonbinded_px46hv_c_scale,w_776.png 776w,
+                        ./src/assets/nonbinded_px46hv_c_scale,w_800.png 800w
+                      "
+                      src="./src/assets/nonbinded_px46hv_c_scale,w_800.png"
+                      alt="Black and white, open and un-binded book"
+                      width="800"
+                      height="800"
+                    />
+                  </picture>
+                </div>
+                <div class="binding-points">
+                  <div class="circle" data-index="1"></div>
+                  <div class="circle" data-index="2"></div>
+                  <div class="circle" data-index="3"></div>
+                  <div class="circle" data-index="4"></div>
+                  <div class="circle" data-index="5"></div>
+                </div>
+              </div>
+              <div class="draggable-container">
+                <div class="draggable-circle" draggable="true"></div>
+              </div>
+            </div>
           </div>
         </section>
         <div class="mobile__container p__space top__space">
@@ -1437,5 +1485,6 @@
       </div>
     </footer>
     <script src="./src/js/menu.js" type="module"></script>
+    <script src="./src/js/interactionone.js" type="module"></script>
   </body>
 </html>
