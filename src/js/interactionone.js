@@ -84,8 +84,11 @@ const moveCircle = (e) => {
             bookImage.src = "./src/assets/bok.png";
             bookImage.srcset = "./src/assets/bok.png";
 
+            // bookImage.src = "./src/assets/bok.png";
+            // bookImage.srcset = "./src/assets/bok.png";
+
             console.log(bookImage.src);
-            // console.log(bookImage.srcset);
+            console.log(bookImage.srcset);
             bindingPoints.forEach((p) => (p.style.display = "none")); // Hide all points
           }, 500);
         }
