@@ -64,19 +64,33 @@ const moveCircle = (e) => {
     ) {
       const index = parseInt(point.dataset.index, 10);
       threadSound.play();
+      //   console.log("currentIndex:", currentIndex);
+      //   console.log(bindingPoints.length);
 
       if (index === currentIndex + 1) {
         point.style.backgroundColor = "green";
         currentIndex++;
         point.style.pointerEvents = "none";
 
-        if (currentIndex === bindingPoints.length) {
+        // if (currentIndex === bindingPoints.length) {
+        //   setTimeout(() => {
+        //     bookImage.src = "./src/assets/bok.png";
+        //     bookImage.srcset = "./src/assets/bok.png";
+        //     bindingPoints.forEach((p) => (p.style.display = "none")); // Hide all points
+        //   }, 500);
+        // }
+        if (currentIndex === 5) {
           setTimeout(() => {
             bookImage.src = "./src/assets/bok.png";
             bookImage.srcset = "./src/assets/bok.png";
+
+            console.log(bookImage.src);
+            // console.log(bookImage.srcset);
             bindingPoints.forEach((p) => (p.style.display = "none")); // Hide all points
           }, 500);
         }
+        // console.log("src", bookImage.src);
+        // console.log(bookImage.srcset);
       }
     }
   });
