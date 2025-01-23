@@ -1010,12 +1010,13 @@ footer {
 }
 
 .interaction-circle {
-  /* height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  aspect-ratio: 1/1;
-  background-color: var(--c-accent); */
   grid-area: 1 / 1 / 2 / 2;
+}
+
+.interaction-one__instructions{
+  width: 40%;
+  margin-inline: auto;
+  margin-block: 2rem 0;
 }
 
 @media only screen and (min-width: 24rem) {

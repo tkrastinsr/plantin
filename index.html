@@ -405,7 +405,10 @@
 
         <section class="interaction__two top__space">
           <div class="center">
-            <div class="interaction-image__container">
+            <div
+              id="interaction-image__container"
+              class="interaction-image__container visually-hidden"
+            >
               <div class="interaction-image">
                 <picture>
                   <source
@@ -440,12 +443,37 @@
                 <circle cx="30.2036" cy="29.9175" r="29.6333" fill="#B62020" />
               </svg>
             </div>
-            <h3 id="interaction__name" class="interaction__name visually-hidden pizza">
+            <h3
+              id="interaction__name"
+              class="interaction__name visually-hidden"
+            >
               Bound it like Plantin
             </h3>
-            <p class="interaction__text visually-hidden">
-              Drag and follow the lines to bound the book
+            <p id="interaction__text" class="interaction__text visually-hidden">
+              Follow Plantin's instructions and drag the needle in the correct
+              order over the bubbles
             </p>
+            <div
+              id="interaction-one__instructions"
+              class="interaction-one__instructions visually-hidden"
+            >
+              <picture>
+                <source
+                  sizes="(max-width: 230px) 100vw, 230px"
+                  srcset="
+                    ./src/assets/instructions_hmhfo3_c_scale,w_80.avif   80w,
+                    ./src/assets/instructions_hmhfo3_c_scale,w_230.avif 230w
+                  "
+                  type="image/avif"
+                />
+                <img
+                  src="./src/assets/instructions.jpg"
+                  alt="instructions on how to bind a book, showing the path where the user has to drag the needle"
+                  width="230"
+                  height="240"
+                />
+              </picture>
+            </div>
             <div class="interaction-two__container">
               <div class="book">
                 <div class="bound-book-image__container visually-hidden">
@@ -513,7 +541,10 @@
                     />
                   </picture>
                 </div>
-                <div class="binding-points__container visually-hidden">
+                <div
+                  id="binding-points__container"
+                  class="binding-points__container visually-hidden"
+                >
                   <div class="binding-points">
                     <div class="circle" data-index="1"></div>
                     <div class="circle" data-index="2"></div>

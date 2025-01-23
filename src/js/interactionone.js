@@ -5,7 +5,12 @@ const bindedImage = document.querySelector(".bound-book-image__container");
 const container = document.querySelector(".draggable-container");
 const threadSound = new Audio("./src/assets/thread.mp3");
 const interactionName = document.getElementById("interaction__name");
-const interactionText = document.querySelector(".interaction__text");
+const interactionText = document.getElementById("interaction__text");
+const interactionImage = document.getElementById(
+  "interaction-image__container"
+);
+const bubblesContainer = document.getElementById("binding-points__container");
+const instructions = document.getElementById("interaction-one__instructions");
 
 let currentIndex = 0;
 let isDragging = false;
@@ -90,12 +95,14 @@ const moveCircle = (e) => {
 };
 
 const init = () => {
+  interactionName.classList.remove("visually-hidden");
+  interactionText.classList.remove("visually-hidden");
+  interactionImage.classList.remove("visually-hidden");
+  container.classList.remove("visually-hidden");
+  bubblesContainer.classList.remove("visually-hidden");
+  instructions.classList.remove("visually-hidden")
   draggable.addEventListener("mousedown", startDrag);
   draggable.addEventListener("touchstart", startDrag);
-  //   console.log("Class list after removal:", interactionName.classList);
-  //   interactionName.classList.remove("visually-hidden");
-  //   console.log("Class list after removal:", interactionName.classList);
-  console.log(document.querySelector(".interaction__name").classList);
 };
 
 init();
