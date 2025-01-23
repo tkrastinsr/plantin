@@ -938,7 +938,7 @@ footer {
 .binding-points {
   position: relative;
   display: grid;
-  align-items: center;
+  align-items: end;
   justify-items: center;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -986,7 +986,6 @@ footer {
 .draggable-circle {
   width: 100px;
   height: 100px;
-  /* background-color: blue; */
   border-radius: 50%;
   cursor: grab;
 }
