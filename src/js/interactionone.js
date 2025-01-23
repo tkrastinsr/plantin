@@ -4,7 +4,7 @@ const bookImage = document.querySelector(".book-image__container");
 const bindedImage = document.querySelector(".bound-book-image__container");
 const container = document.querySelector(".draggable-container");
 const threadSound = new Audio("./src/assets/thread.mp3");
-const interactionName = document.querySelector(".interaction__name");
+const interactionName = document.getElementById("interaction__name");
 const interactionText = document.querySelector(".interaction__text");
 
 let currentIndex = 0;
@@ -92,9 +92,10 @@ const moveCircle = (e) => {
 const init = () => {
   draggable.addEventListener("mousedown", startDrag);
   draggable.addEventListener("touchstart", startDrag);
-//   console.log("Class list after removal:", interactionName.classList);
-//   interactionName.classList.remove("visually-hidden");
-  console.log("Class list after removal:", interactionName.classList);
+  //   console.log("Class list after removal:", interactionName.classList);
+  //   interactionName.classList.remove("visually-hidden");
+  //   console.log("Class list after removal:", interactionName.classList);
+  console.log(document.querySelector(".interaction__name").classList);
 };
 
 init();
