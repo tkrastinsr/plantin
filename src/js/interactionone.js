@@ -1,8 +1,11 @@
 const draggable = document.querySelector(".draggable-circle");
 const bindingPoints = document.querySelectorAll(".circle");
-const bookImage = document.querySelector(".book-image");
+const bookImage = document.querySelector(".book-image__container");
+const bindedImage = document.querySelector(".bound-book-image__container");
 const container = document.querySelector(".draggable-container");
 const threadSound = new Audio("./src/assets/thread.mp3");
+const interactionName = document.querySelector(".interaction__name");
+const interactionText = document.querySelector(".interaction__text");
 
 let currentIndex = 0;
 let isDragging = false;
@@ -13,6 +16,10 @@ let offsetY = 0;
 const startDrag = (e) => {
   e.preventDefault(); // Disabling default drag
   isDragging = true;
+
+  threadSound.play().catch((err) => {
+    console.log("Audio playback prevented:", err);
+  });
 
   const rect = draggable.getBoundingClientRect();
   const clientX = e.touches ? e.touches[0].clientX : e.clientX;
@@ -64,37 +71,30 @@ const moveCircle = (e) => {
     ) {
       const index = parseInt(point.dataset.index, 10);
       threadSound.play();
-      //   console.log("currentIndex:", currentIndex);
-      //   console.log(bindingPoints.length);
 
       if (index === currentIndex + 1) {
         point.style.backgroundColor = "green";
         currentIndex++;
         point.style.pointerEvents = "none";
 
-        // if (currentIndex === bindingPoints.length) {
-        //   setTimeout(() => {
-        //     bookImage.src = "./src/assets/bok.png";
-        //     bookImage.srcset = "./src/assets/bok.png";
-        //     bindingPoints.forEach((p) => (p.style.display = "none")); // Hide all points
-        //   }, 500);
-        // }
         if (currentIndex === 6) {
           setTimeout(() => {
-            bookImage.src = "./src/assets/bok.png";
-            bookImage.srcset = "./src/assets/bok.png";
-
-            console.log(bookImage.src);
-            // console.log(bookImage.srcset);
+            bindedImage.classList.remove("visually-hidden");
+            bookImage.classList.add("visually-hidden");
             bindingPoints.forEach((p) => (p.style.display = "none")); // Hide all points
           }, 500);
         }
-        // console.log("src", bookImage.src);
-        // console.log(bookImage.srcset);
       }
     }
   });
 };
 
-draggable.addEventListener("mousedown", startDrag);
-draggable.addEventListener("touchstart", startDrag);
+const init = () => {
+  draggable.addEventListener("mousedown", startDrag);
+  draggable.addEventListener("touchstart", startDrag);
+//   console.log("Class list after removal:", interactionName.classList);
+//   interactionName.classList.remove("visually-hidden");
+  console.log("Class list after removal:", interactionName.classList);
+};
+
+init();

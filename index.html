@@ -440,12 +440,43 @@
                 <circle cx="30.2036" cy="29.9175" r="29.6333" fill="#B62020" />
               </svg>
             </div>
-            <h3 class="interaction__name">Bound it like Plantin</h3>
-            <p class="interaction__text">
+            <h3 class="interaction__name visually-hidden">Bound it like Plantin</h3>
+            <p class="interaction__text visually-hidden">
               Drag and follow the lines to bound the book
             </p>
             <div class="interaction-two__container">
               <div class="book">
+                <div class="bound-book-image__container visually-hidden">
+                  <picture>
+                    <source
+                      sizes="(max-width: 800px) 100vw, 800px"
+                      srcset="
+                        ./src/assets/bok_nze5k8_c_scale,w_400.avif 400w,
+                        ./src/assets/bok_nze5k8_c_scale,w_729.avif 729w,
+                        ./src/assets/bok_nze5k8_c_scale,w_800.avif 800w
+                      "
+                      src="bok_nze5k8_c_scale,w_800.avif"
+                      type="image/avif"
+                    />
+                    <img
+                      class="book-image"
+                      sizes="(max-width: 800px) 100vw, 800px"
+                      srcset="
+                        ./src/assets/bok_sty6ta_c_scale,w_400.png 400w,
+                        ./src/assets/bok_sty6ta_c_scale,w_496.png 496w,
+                        ./src/assets/bok_sty6ta_c_scale,w_576.png 576w,
+                        ./src/assets/bok_sty6ta_c_scale,w_652.png 652w,
+                        ./src/assets/bok_sty6ta_c_scale,w_712.png 712w,
+                        ./src/assets/bok_sty6ta_c_scale,w_770.png 770w,
+                        ./src/assets/bok_sty6ta_c_scale,w_800.png 800w
+                      "
+                      src="./src/assets/bok_sty6ta_c_scale,w_800.png"
+                      alt="black and white detailed and bound book"
+                      width="800"
+                      height="800"
+                    />
+                  </picture>
+                </div>
                 <div class="book-image__container">
                   <picture>
                     <source
@@ -480,7 +511,7 @@
                     />
                   </picture>
                 </div>
-                <div class="binding-points__container">
+                <div class="binding-points__container visually-hidden">
                   <div class="binding-points">
                     <div class="circle" data-index="1"></div>
                     <div class="circle" data-index="2"></div>
@@ -491,8 +522,30 @@
                   </div>
                 </div>
               </div>
-              <div class="draggable-container">
-                <div class="draggable-circle" draggable="true"></div>
+              <div class="draggable-container visually-hidden">
+                <div class="draggable-circle" draggable="true">
+                  <picture>
+                    <source
+                      sizes="(max-width: 140px) 100vw, 140px"
+                      srcset="
+                        ./src/assets/needle_cjh9kp_c_scale,w_80.avif   80w,
+                        ./src/assets/needle_cjh9kp_c_scale,w_140.avif 140w
+                      "
+                      type="image/avif"
+                    />
+                    <img
+                      sizes="(max-width: 140px) 100vw, 140px"
+                      srcset="
+                        ./src/assets/needle_apl1sy_c_scale,w_80.png   80w,
+                        ./src/assets/needle_apl1sy_c_scale,w_140.png 140w
+                      "
+                      src="./src/assets/needle_apl1sy_c_scale,w_140.png"
+                      alt="An illustration of a needle with a circle in the middle of it"
+                      width="140"
+                      height="140"
+                    />
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
