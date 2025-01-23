@@ -16,6 +16,7 @@ const init = () => {
   $navVisit.classList.add("visually-hidden");
   $navName.classList.add("visually-hidden");
   $navLogo.classList.add("visually-hidden");
+  $burgerMenu.style.position = "fixed";
 
   const openNavigation = () => {
     $navButton.setAttribute("aria-expanded", "true");
@@ -25,6 +26,7 @@ const init = () => {
     $navName.classList.remove("visually-hidden");
     $navLogo.classList.remove("visually-hidden");
     $burgerMenu.classList.add("burger-menu--opened");
+    $burgerMenu.style.position = "static";
     $nav.classList.add("nav--fixed");
   };
 
@@ -36,6 +38,7 @@ const init = () => {
     $navName.classList.add("visually-hidden");
     $navLogo.classList.add("visually-hidden");
     $burgerMenu.classList.remove("burger-menu--opened");
+    $burgerMenu.style.position = "fixed";
     $nav.classList.remove("nav--fixed");
   };
 

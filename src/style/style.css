@@ -80,7 +80,7 @@ h1 {
 
 .burger-menu {
   grid-area: 1 / 1 / 2 / 3;
-  position: fixed;
+  /* position: fixed; */
   right: 0px;
   z-index: 5;
 }
