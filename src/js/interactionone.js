@@ -1,6 +1,7 @@
 const draggable = document.querySelector(".draggable-circle");
 const bindingPoints = document.querySelectorAll(".circle");
-const bookImage = document.querySelector(".book-image");
+const bookImage = document.querySelector(".book-image__container");
+const bindedImage = document.querySelector(".bound-book-image__container");
 const container = document.querySelector(".draggable-container");
 const threadSound = new Audio("./src/assets/thread.mp3");
 
@@ -81,14 +82,18 @@ const moveCircle = (e) => {
         // }
         if (currentIndex === 6) {
           setTimeout(() => {
-            bookImage.src = "./src/assets/bok.png";
-            bookImage.srcset = "./src/assets/bok.png";
+            // bookImage.src = "./src/assets/test.png";
+            //bookImage.srcset = "./src/assets/bok.png";
+            bindedImage.classList.remove("visually-hidden");
+            bookImage.classList.add("visually-hidden");
+            console.log(bindedImage.classList);
+            console.log(bookImage.classList);
 
             // bookImage.src = "./src/assets/bok.png";
             // bookImage.srcset = "./src/assets/bok.png";
 
             console.log(bookImage.src);
-            console.log(bookImage.srcset);
+            // console.log(bookImage.srcset);
             bindingPoints.forEach((p) => (p.style.display = "none")); // Hide all points
           }, 500);
         }

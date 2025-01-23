@@ -918,6 +918,10 @@ footer {
   grid-template-rows: repeat(5, 1fr);
 }
 
+.bound-book-image__container {
+  grid-area: 1 / 1 / 6 / 5;
+}
+
 .book-image__container {
   grid-area: 1 / 1 / 6 / 5;
 }
