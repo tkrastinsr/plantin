@@ -1163,7 +1163,10 @@
 
         <section>
           <div class="center top__space-space">
-            <div class="interaction-image__container">
+            <div
+              id="interaction-four-image__container"
+              class="interaction-image__container visually-hidden"
+            >
               <div class="interaction-image">
                 <picture>
                   <source
@@ -1198,8 +1201,13 @@
                 <circle cx="30.2036" cy="29.9175" r="29.6333" fill="#B62020" />
               </svg>
             </div>
-            <h3 class="interaction__name">Hide the books</h3>
-            <p class="interaction__text">
+            <h3
+              id="interaction-four__name"
+              class="interaction__name visually-hidden"
+            >
+              Hide the books
+            </h3>
+            <p class="interaction__text interaction-four__text visually-hidden">
               Quickly swipe in the correct direction to hide red pages
             </p>
           </div>
@@ -1457,11 +1465,38 @@
               </picture>
             </div>
           </div>
-          <div class="letter-display">
-            <p id="letter" class="letter">Press a Letter</p>
-            <!-- <span class="letter">Press a Letter</span> -->
+          <div id="action-text__container-pe" class="action-text__container visually-hidden">
+            <p id="action-text" class="action-text">Press a Letter</p>
           </div>
-          <div id="drag-circle" class="drag-circle"></div>
+          <div
+            id="drag-circle__container-pe"
+            class="drag-circle__container visually-hidden"
+          >
+            <div id="drag-circle" class="drag-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="53"
+                height="53"
+                viewBox="0 0 53 53"
+                fill="none"
+              >
+                <path
+                  d="M16.5825 31.6947V13.4605C16.5825 11.6474 17.9296 9.94922 19.7448 9.94922C21.5645 9.94922 23.2274 11.3913 23.2274 13.2043V22.6582M23.2274 22.6582L23.2097 25.2552M23.2274 22.6582C24.4707 17.9831 30.1902 19.7763 29.8391 23.4443C29.8325 23.5106 29.8391 25.0741 29.8391 25.0741M29.8391 25.0741V27.5916M29.8391 25.0741C30.4641 20.8562 37.396 20.7391 36.5127 27.172M36.5127 27.172L36.4619 28.6913M36.5127 27.172C37.5506 22.7333 43.215 23.6895 43.0648 27.7815V35.9236C43.0582 39.404 42.3802 41.0691 40.5804 43.1648C40.2271 43.5755 39.8848 44.0017 39.6264 44.4787C38.6813 46.2299 39.1141 46.7091 38.9573 48.5641M16.5847 22.9961C13.6697 25.6328 11.7087 28.0399 11.1213 28.7598C9.15586 31.7433 9.65494 33.6998 12.4463 37.6815C14.5265 40.6406 16.4367 42.7695 16.5825 42.9373C18.0687 44.6156 17.9362 45.7264 17.9362 48.5862"
+                  stroke="#1B1B1B"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M28.7838 13.2494C28.7838 8.36894 24.8199 4.41602 19.9284 4.41602C17.5831 4.41368 15.3329 5.34294 13.6727 6.99945C12.0124 8.65596 11.0781 10.9041 11.0752 13.2494"
+                  stroke="#1B1B1B"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
         </section>
         <div class="mobile__container p__space top__space">
           <p>
