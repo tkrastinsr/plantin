@@ -1147,6 +1147,104 @@ footer {
   height: auto;
 }
 
+.map__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 80%;
+  height: 80vh;
+  margin-inline: auto;
+}
+
+/* #map {
+  position: relative;
+  width: 80vw;
+  height: 80vh;
+} */
+
+.waypoint {
+  width: 25px;
+  height: 25px;
+  background-color: var(--c-black);
+  border: 2px solid var(--c-accent);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  z-index: 1;
+}
+
+.waypoint.start {
+  background-color: green;
+  color: #fff;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: center;
+}
+
+.waypoint.path:hover {
+  background-color: var(--c-accent);
+  transform: scale(2);
+}
+
+.waypoint.selected {
+  background-color: var(--c-white);
+  transform: scale(1.2);
+}
+
+.line {
+  position: absolute;
+  background-color: var(--c-accent);
+  transform-origin: 0 0;
+  top: 1;
+}
+
+.path-one {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.path-two {
+  grid-area: 1 / 2 / 2 / 4;
+  justify-self: center;
+  align-self: center;
+}
+
+.path-three {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.path-four {
+  grid-area: 2 / 3 / 3 / 4;
+  align-self: center;
+}
+
+.path-five {
+  grid-area: 3 / 2 / 4 / 3;
+  align-self: flex-end;
+  align-self: center;
+}
+
+.path-six {
+  grid-area: 3 / 3 / 4 / 4;
+  align-self: center;
+  justify-self: center;
+}
+
+.path-seven {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.path-eight {
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+.end {
+  grid-area: 4 / 4 / 5 / 5;
+  justify-self: center;
+  align-self: center;
+}
+
 @media only screen and (min-width: 24rem) {
   .header {
     display: grid;

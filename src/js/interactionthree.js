@@ -1,18 +1,21 @@
 const map = document.getElementById("map");
-const pathCircles = document.querySelectorAll(".circle.path");
+const pathCircles = document.querySelectorAll(".waypoint.path");
 const paths = {
-  start: ["1", "3"],
-  1: ["4"],
-  3: ["2", "4"],
-  2: ["5"],
-  4: ["5", "6"],
-  5: ["end"],
-  6: ["end"],
+  start: ["1", "2"],
+  1: ["3"],
+  2: ["4"],
+  3: ["4", "5"],
+  4: ["3", "6"],
+  5: ["6", "7"],
+  6: ["8"],
+  7: ["8"],
+  8: ["end"],
 };
 let currentPosition = "start";
 let selectedPath = [];
 
 const createLine = (fromElem, toElem) => {
+  const mapRect = map.getBoundingClientRect(); // Get #map's position
   const { left: x1, top: y1, width, height } = fromElem.getBoundingClientRect();
   const { left: x2, top: y2 } = toElem.getBoundingClientRect();
 
@@ -25,8 +28,8 @@ const createLine = (fromElem, toElem) => {
   line.style = `
     width: ${length}px;
     height: 2px;
-    top: ${y1 + height / 2}px;
-    left: ${x1 + width / 2}px;
+    top: ${y1 + height / 2 - mapRect.top}px;
+    left: ${x1 + width / 2 - mapRect.left}px;
     transform: rotate(${angle}deg);
   `;
 
