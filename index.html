@@ -736,24 +736,98 @@
 
         <section>
           <div class="center">
-            <h3 class="interaction__name">Show Plantin the way</h3>
-            <p class="interaction__text">
+            <div
+              id="interaction-three-image__container"
+              class="interaction-image__container visually-hidden"
+            >
+              <div class="interaction-image">
+                <picture>
+                  <source
+                    sizes="(max-width: 161px) 100vw, 161px"
+                    srcset="
+                      ./src/assets/interaction_gdggnt_c_scale,w_60.avif   60w,
+                      ./src/assets/interaction_gdggnt_c_scale,w_161.avif 161w
+                    "
+                    type="image/avif"
+                  />
+                  <img
+                    sizes="(max-width: 161px) 100vw, 161px"
+                    srcset="
+                      ./src/assets/interaction_k9jmli_c_scale,w_60.png   60w,
+                      ./src/assets/interaction_k9jmli_c_scale,w_161.png 161w
+                    "
+                    src="interaction_k9jmli_c_scale,w_161.png"
+                    alt="A stamp illustration of two soldiers interacting with each other, with a red circle behind it"
+                    width="161"
+                    height="165"
+                  />
+                </picture>
+              </div>
+              <svg
+                class="interaction-circle"
+                xmlns="http://www.w3.org/2000/svg"
+                width="70"
+                height="70"
+                viewBox="0 0 60 60"
+                fill="none"
+              >
+                <circle cx="30.2036" cy="29.9175" r="29.6333" fill="#B62020" />
+              </svg>
+            </div>
+            <h3
+              id="interaction-three__name"
+              class="interaction__name visually-hidden"
+            >
+              Show Plantin the way
+            </h3>
+            <p
+              id="interaction-three__explanation"
+              class="interaction__text visually-hidden"
+            >
               Click the circles to get to the destination
             </p>
           </div>
           <div class="map__background-image">
             <div id="map" class="map__container">
-              <div class="waypoint-start" data-id="start">Start</div>
-              <div class="waypoint-end" data-id="end">Destination</div>
+              <div class="waypoint-start visually-hidden" data-id="start">
+                Start
+              </div>
+              <div class="waypoint-end visually-hidden" data-id="end">
+                Destination
+              </div>
 
-              <div class="waypoint path path-one" data-id="1"></div>
-              <div class="waypoint path path-two" data-id="2"></div>
-              <div class="waypoint path path-three" data-id="3"></div>
-              <div class="waypoint path path-four" data-id="4"></div>
-              <div class="waypoint path path-five" data-id="5"></div>
-              <div class="waypoint path path-six" data-id="6"></div>
-              <div class="waypoint path path-seven" data-id="7"></div>
-              <div class="waypoint path path-eight" data-id="8"></div>
+              <div
+                class="waypoint path path-one visually-hidden"
+                data-id="1"
+              ></div>
+              <div
+                class="waypoint path path-two visually-hidden"
+                data-id="2"
+              ></div>
+              <div
+                class="waypoint path path-three visually-hidden"
+                data-id="3"
+              ></div>
+              <div
+                class="waypoint path path-four visually-hidden"
+                data-id="4"
+              ></div>
+              <div
+                class="waypoint path path-five visually-hidden"
+                data-id="5"
+              ></div>
+              <div
+                class="waypoint path path-six visually-hidden"
+                data-id="6"
+              ></div>
+              <div
+                class="waypoint path path-seven visually-hidden"
+                data-id="7"
+              ></div>
+              <div
+                class="waypoint path path-eight visually-hidden"
+                data-id="8"
+              ></div>
               <div class="blood-stain__image visually-hidden">
                 <picture>
                   <img

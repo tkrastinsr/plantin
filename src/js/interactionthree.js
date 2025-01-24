@@ -3,6 +3,13 @@ const $pathCircles = document.querySelectorAll(".waypoint.path");
 const $pathStart = document.querySelector(".waypoint-start");
 const $pathEnd = document.querySelector(".waypoint-end");
 const $bloodImage = document.querySelector(".blood-stain__image");
+const $interactionName = document.getElementById("interaction-three__name");
+const $interactionText = document.getElementById(
+  "interaction-three__explanation"
+);
+const $interactionImage = document.getElementById(
+  "interaction-three-image__container"
+);
 const paths = {
   start: ["1", "2"],
   1: ["3"],
@@ -74,6 +81,11 @@ const interactionEnding = () => {
 };
 
 const init = () => {
+  $interactionName.classList.remove("visually-hidden");
+  $interactionText.classList.remove("visually-hidden");
+  $interactionImage.classList.remove("visually-hidden");
+  $pathStart.classList.remove("visually-hidden");
+  $pathEnd.classList.remove("visually-hidden");
   Object.keys(paths).forEach((from) => {
     paths[from].forEach((to) => {
       const fromElem = document.querySelector(`[data-id="${from}"]`);
@@ -84,6 +96,7 @@ const init = () => {
 
   $pathCircles.forEach((circle) => {
     circle.addEventListener("click", handleCircleClick);
+    circle.classList.remove("visually-hidden");
   });
 };
 
