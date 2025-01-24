@@ -22,6 +22,7 @@ const removeWork = () => {
   if (currentWorkIndex >= $works.length) {
     $letterDisplay.textContent = "You did it!";
     console.log("Done");
+    $draggingCircle.classList.add("visually-hidden");
   } else {
     isMobile ? showNextDirection() : showNextLetter();
   }
