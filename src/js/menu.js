@@ -10,6 +10,7 @@ const init = () => {
   const $navName = document.querySelector(".nav__name");
   const $navLogo = document.querySelector(".nav__logo-image");
   const $burgerMenu = document.querySelector(".burger-menu");
+  const $navItem = document.querySelectorAll(".nav__item");
 
   $navButton.classList.remove("visually-hidden");
   $navList.classList.add("visually-hidden");
@@ -54,6 +55,9 @@ const init = () => {
   };
 
   $navButton.addEventListener("click", toggleNavigation);
+  $navItem.forEach((item) => {
+    item.addEventListener("click", toggleNavigation);
+  });
 
   // add event to the last item in the nav list to trigger the disclosure to close if the user tabs out of the disclosure
   listItems[listItems.length - 1].addEventListener("blur", handleBlur);
