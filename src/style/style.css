@@ -1269,6 +1269,12 @@ footer {
   z-index: 1;
 }
 
+.blood-stain__image {
+  grid-area: 1 / 1 / 5 / 5;
+  justify-self: center;
+  align-self: center;
+}
+
 @media only screen and (min-width: 24rem) {
   .header {
     display: grid;

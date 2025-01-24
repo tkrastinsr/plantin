@@ -1,5 +1,8 @@
 const map = document.getElementById("map");
-const pathCircles = document.querySelectorAll(".waypoint.path");
+const $pathCircles = document.querySelectorAll(".waypoint.path");
+const $pathStart = document.querySelector(".waypoint-start");
+const $pathEnd = document.querySelector(".waypoint-end");
+const $bloodImage = document.querySelector(".blood-stain__image");
 const paths = {
   start: ["1", "2"],
   1: ["3"],
@@ -15,7 +18,7 @@ let currentPosition = "start";
 let selectedPath = [];
 
 const createLine = (fromElem, toElem) => {
-  const mapRect = map.getBoundingClientRect(); // Get #map's position
+  const mapRect = map.getBoundingClientRect();
   const { left: x1, top: y1, width, height } = fromElem.getBoundingClientRect();
   const { left: x2, top: y2 } = toElem.getBoundingClientRect();
 
@@ -53,12 +56,21 @@ const handleCircleClick = (event) => {
 };
 
 const interactionEnding = () => {
-  pathCircles.forEach((circle) => {
+  $pathCircles.forEach((circle) => {
     circle.removeEventListener("click", handleCircleClick);
   });
-  pathCircles.forEach((circle) => {
+  $pathCircles.forEach((circle) => {
     circle.classList.add("visually-hidden");
   });
+  const lines = document.querySelectorAll(".line");
+  lines.forEach((line) => {
+    line.classList.add("visually-hidden");
+  });
+  $pathStart.classList.add("visually-hidden");
+  $pathEnd.classList.add("visually-hidden");
+  $bloodImage.classList.remove("visually-hidden");
+  const audio = new Audio("./src/assets/sword.mp3");
+  audio.play();
 };
 
 const init = () => {
@@ -70,7 +82,7 @@ const init = () => {
     });
   });
 
-  pathCircles.forEach((circle) => {
+  $pathCircles.forEach((circle) => {
     circle.addEventListener("click", handleCircleClick);
   });
 };
