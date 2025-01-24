@@ -1013,10 +1013,82 @@ footer {
   grid-area: 1 / 1 / 2 / 2;
 }
 
-.interaction-one__instructions{
+.interaction-one__instructions {
   width: 40%;
   margin-inline: auto;
   margin-block: 2rem 0;
+}
+
+.work-image__container {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.work-one {
+  grid-area: 1 / 2 / 2 / 4;
+  z-index: 2;
+}
+
+.work-two {
+  grid-area: 2 / 3 / 4 / 5;
+}
+
+.work-three {
+  grid-area: 1 / 3 / 3 / 5;
+  z-index: 3;
+}
+
+.work-four {
+  grid-area: 2 / 2 / 4 / 4;
+  z-index: 1;
+}
+
+.work-five {
+  grid-area: 2 / 1 / 4 / 3;
+  justify-self: center;
+  align-self: center;
+  width: 60%;
+}
+
+.work-six {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.work-seven {
+  grid-area: 3 / 3 / 4 / 5;
+}
+
+.work-eight {
+  grid-area: 1 / 2 / 3 / 3;
+  z-index: 2;
+}
+
+.work-nine {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.work-ten {
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+.work-eleven {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.work-twelve {
+  grid-area: 2 / 2 / 4 / 5;
+  z-index: 1;
+  align-self: center;
+}
+
+.work-thirteen {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.work-fourteen {
+  grid-area: 2 / 2 / 3 / 3;
+  z-index: 2;
 }
 
 @media only screen and (min-width: 24rem) {
