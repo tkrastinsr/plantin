@@ -19,12 +19,12 @@ let offsetX = 0;
 let offsetY = 0;
 
 const startDrag = (e) => {
-  e.preventDefault(); // Disabling default drag
+  e.preventDefault();
   isDragging = true;
 
-  threadSound.play().catch((err) => {
-    console.log("Audio playback prevented:", err);
-  });
+  //   threadSound.play().catch((err) => {
+  //     console.log("Audio playback prevented:", err);
+  //   });
 
   const rect = draggable.getBoundingClientRect();
   const clientX = e.touches ? e.touches[0].clientX : e.clientX;
@@ -100,7 +100,7 @@ const init = () => {
   interactionImage.classList.remove("visually-hidden");
   container.classList.remove("visually-hidden");
   bubblesContainer.classList.remove("visually-hidden");
-  instructions.classList.remove("visually-hidden")
+  instructions.classList.remove("visually-hidden");
   draggable.addEventListener("mousedown", startDrag);
   draggable.addEventListener("touchstart", startDrag);
 };
