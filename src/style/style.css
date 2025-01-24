@@ -1157,11 +1157,13 @@ footer {
   margin-inline: auto;
 }
 
-/* #map {
-  position: relative;
-  width: 80vw;
-  height: 80vh;
-} */
+.map__background-image {
+  margin-block: 2rem;
+  background-image: url(../assets/maptwo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .waypoint {
   width: 25px;
@@ -1176,11 +1178,23 @@ footer {
   z-index: 1;
 }
 
-.waypoint.start {
-  background-color: green;
-  color: #fff;
+.waypoint-start {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid var(--c-accent);
+  color: var(--c-white);
   grid-area: 1 / 1 / 2 / 2;
   justify-self: center;
+  z-index: 1;
+  font-family: "arsenica-variable", sans-serif;
+  font-variation-settings: "wght" 300, "opsz" 1000;
+  font-style: italic;
+  font-size: var(--step-3);
 }
 
 .waypoint.path:hover {
@@ -1239,10 +1253,20 @@ footer {
   grid-area: 4 / 3 / 5 / 4;
 }
 
-.end {
-  grid-area: 4 / 4 / 5 / 5;
+.waypoint-end {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  grid-area: 4 / 3 / 5 / 5;
   justify-self: center;
   align-self: center;
+  text-align: center;
+  font-family: "arsenica-variable", sans-serif;
+  font-variation-settings: "wght" 300, "opsz" 1000;
+  font-style: italic;
+  font-size: var(--step-2);
+  background-color: var(--c-accent);
+  z-index: 1;
 }
 
 @media only screen and (min-width: 24rem) {
