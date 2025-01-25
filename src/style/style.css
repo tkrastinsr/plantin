@@ -76,7 +76,7 @@ h1 {
 }
 
 .mobile__container-intro {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -560,6 +560,7 @@ h2 {
   height: 30vh;
   overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 
 .pile-image {
@@ -594,7 +595,8 @@ h2 {
 }
 
 .chest__top {
-  margin-block-start: -5rem;
+  margin-block-start: -10%;
+  z-index: 1;
 }
 
 .background__dark {
@@ -1035,6 +1037,7 @@ footer {
   mix-blend-mode: multiply;
   aspect-ratio: 1/1;
   grid-area: 1 / 1 / 2 / 2;
+  z-index: 1;
 }
 
 .interaction-circle {
@@ -1408,9 +1411,9 @@ footer {
     grid-area: 1 / 1 / 2 / 3;
     justify-self: center;
   }
-  .hero__image {
+  /* .hero__image {
     max-width: 270px;
-  }
+  } */
   .scroll-down {
     background-size: cover;
     background-repeat: no-repeat;
