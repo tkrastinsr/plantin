@@ -46,6 +46,8 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: var(--step-1);
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 main {
@@ -1421,7 +1423,7 @@ footer {
 
 @media screen and (min-width: 40rem) {
   .antwerp-image {
-    width: 200%;
+    width: 100%;
     height: auto;
     object-fit: cover;
     object-position: center;
@@ -1634,7 +1636,7 @@ footer {
     grid-area: 1 / 4 / 2 / 6;
     margin-block-start: 0;
     justify-self: end;
-    margin-inline: auto -5%;
+    margin-inline: auto 0;
     width: 60%;
     max-width: 345px;
   }
@@ -1834,14 +1836,13 @@ footer {
   .socials__text {
     justify-self: center;
   }
-  .interaction__two{
+  .interaction__two {
     background-image: url(../assets/bookblockblack.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 20%;
-    
   }
-  .master__container{
+  .master__container {
     background-image: url(../assets/bookblockred.png);
     background-repeat: no-repeat;
     background-position: left;
@@ -1980,7 +1981,7 @@ footer {
   .intro {
     background-size: 25%;
   }
-  .master__container{
+  .master__container {
     background-size: 0%;
   }
 }
