@@ -1150,9 +1150,11 @@
           A beacon of his relentless
           <span class="highlight">commitment to quality</span>.
         </p>
-        <p class="mobile__container intro__quote top__space-space communication__quote">
-          Printing led to a massive increase in the speed of communication
-        </p>
+        <div class="communication__quote">
+          <p class="mobile__container intro__quote top__space-space">
+            Printing led to a massive increase in the speed of communication
+          </p>
+        </div>
         <div class="mobile__container p__space top__space">
           <p>
             <span class="bigger">I</span>n 16th century - an age where
@@ -1181,31 +1183,33 @@
           </p>
         </div>
         <div class="mobile__container">
-          <picture>
-            <source
-              sizes="(max-width: 412px) 100vw, 412px"
-              srcset="
-                ./src/assets/thomas_vgh5bv_c_scale,w_250.avif 250w,
-                ./src/assets/thomas_vgh5bv_c_scale,w_399.avif 399w,
-                ./src/assets/thomas_vgh5bv_c_scale,w_412.avif 412w
-              "
-              type="image/avif"
-            />
-            <img
-              class="thomas-image"
-              sizes="(max-width: 412px) 100vw, 412px"
-              srcset="
-                ./src/assets/thomas_taluhf_c_scale,w_250.png 250w,
-                ./src/assets/thomas_taluhf_c_scale,w_321.png 321w,
-                ./src/assets/thomas_taluhf_c_scale,w_381.png 381w,
-                ./src/assets/thomas_taluhf_c_scale,w_412.png 412w
-              "
-              src="./src/assets/thomas_taluhf_c_scale,w_412.png"
-              alt="cut out illustration of thomas taluhf with a red circle and a fountain pen behind him"
-              width="412"
-              height="431"
-            />
-          </picture>
+          <div class="thomas-image__scroll">
+            <picture>
+              <source
+                sizes="(max-width: 412px) 100vw, 412px"
+                srcset="
+                  ./src/assets/thomas_vgh5bv_c_scale,w_250.avif 250w,
+                  ./src/assets/thomas_vgh5bv_c_scale,w_399.avif 399w,
+                  ./src/assets/thomas_vgh5bv_c_scale,w_412.avif 412w
+                "
+                type="image/avif"
+              />
+              <img
+                class="thomas-image"
+                sizes="(max-width: 412px) 100vw, 412px"
+                srcset="
+                  ./src/assets/thomas_taluhf_c_scale,w_250.png 250w,
+                  ./src/assets/thomas_taluhf_c_scale,w_321.png 321w,
+                  ./src/assets/thomas_taluhf_c_scale,w_381.png 381w,
+                  ./src/assets/thomas_taluhf_c_scale,w_412.png 412w
+                "
+                src="./src/assets/thomas_taluhf_c_scale,w_412.png"
+                alt="cut out illustration of thomas taluhf with a red circle and a fountain pen behind him"
+                width="412"
+                height="431"
+              />
+            </picture>
+          </div>
           <div class="thomas-name">
             <p>Thomas Stapelton</p>
           </div>
@@ -1748,19 +1752,21 @@
             himself and offer his services, hoping he would be spared.
           </p>
         </div>
-        <p
-          class="letter left-border top__space bottom__space mobile__container"
-        >
-          "<span class="highlight"
-            >I dare say that Plantin's is the largest and best supplied</span
-          >,<br />not only with all kinds of stamps and matrices, type and all
-          other things useful and necessary for an independent printing office,
-          but also with all kinds of illustration and ornaments, [...] <br />I
-          therefore believe that there is no collection in the whole of Europe
-          of so many beautiful and good letters as many of the most important
-          printers and experts in this field from France, the German Empire and
-          Italy have written".
-        </p>
+        <div class="letter__scroll">
+          <p
+            class="letter left-border top__space bottom__space mobile__container"
+          >
+            "<span class="highlight"
+              >I dare say that Plantin's is the largest and best supplied</span
+            >,<br />not only with all kinds of stamps and matrices, type and all
+            other things useful and necessary for an independent printing
+            office, but also with all kinds of illustration and ornaments, [...]
+            <br />I therefore believe that there is no collection in the whole
+            of Europe of so many beautiful and good letters as many of the most
+            important printers and experts in this field from France, the German
+            Empire and Italy have written".
+          </p>
+        </div>
         <div class="mobile__container p__space">
           <p class="map__caption bottom__space">
             His letter to the king of Spain, trying to convince him to choose
@@ -1892,7 +1898,7 @@
       >
         <div class="museum-cliff__content">
           <h2 class="museum__name">
-            <span class="museum__name--bold">Plantin</span> -<br />
+            <span class="museum__name--bold">Plantin</span> <br />
             <span class="museum__name--bold">Moretus</span><br />Museum
           </h2>
           <hr />
@@ -1912,10 +1918,9 @@
         </div>
       </section>
       <div class="ending-quote__container top__space-space">
-        <p class="ending-quote__text">
+          <p class="ending-quote__text">
           “In his Golden Compass, we find a symbol not just of his trade but of
           his unwavering vision and ingenuity.”
-        </p>
         <div class="circle__stamp-container">
           <picture>
             <source

@@ -20,7 +20,6 @@ const intro = () => {
       start: "top bottom",
       end: "bottom bottom",
       scrub: 2,
-      markers: true,
     },
     y: "200px",
   });
@@ -184,10 +183,87 @@ if (screenWidth > 767) {
   });
 }
 
+const printSection = () => {
+  gsap.from(".communication__quote", {
+    scrollTrigger: {
+      trigger: ".communication__quote",
+      start: "center bottom",
+      end: "center center",
+      scrub: 3,
+      markers: true,
+    },
+    x: "-10%",
+    opacity: 0,
+  });
+  gsap.from(".thomas-image__scroll", {
+    scrollTrigger: {
+      trigger: ".thomas-image__scroll",
+      start: "top bottom",
+      end: "center center",
+      scrub: 2,
+    },
+    y: "20%",
+  });
+  gsap.from(".book__conatainer", {
+    scrollTrigger: {
+      trigger: ".book__conatainer",
+      start: "top bottom",
+      end: "top top",
+      scrub: 2,
+    },
+    y: "20%",
+  });
+  gsap.from(".skull-image", {
+    scrollTrigger: {
+      trigger: ".skull-image",
+      start: "top bottom",
+      end: "center center",
+      scrub: 2,
+    },
+    x: "-20%",
+  });
+  gsap.from(".letter__scroll", {
+    scrollTrigger: {
+      trigger: ".letter__scroll",
+      start: "center bottom",
+      end: "center center",
+      scrub: 3,
+      markers: true,
+    },
+    x: "-10%",
+    opacity: 0,
+  });
+  gsap.from(".printing-house__image", {
+    scrollTrigger: {
+      trigger: ".printing-house__image",
+      start: "center bottom",
+      end: "center center",
+      scrub: 3,
+      markers: true,
+    },
+    x: "-10%",
+  });
+};
+
+const finaleSection = ()=>{
+    gsap.from(".ending__circle", {
+      scrollTrigger: {
+        trigger: ".ending__circle",
+        start: "center bottom",
+        end: "center center",
+        scrub: 3,
+        markers: true,
+      },
+      scale: 0,
+    });
+}
+
 const startAnimations = () => {
   hero();
   intro();
   molds();
+  printSection();
+  finaleSection();
 };
 
 const init = () => {
