@@ -73,6 +73,11 @@ h1 {
   margin-block-start: 1rem;
 }
 
+.mobile__container-intro {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .mobile__container {
   width: 90%;
   margin: 0 auto;
@@ -416,7 +421,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  height: 60vh;
+  /* height: 60vh; */
 }
 
 .ship__container picture {
@@ -1338,6 +1343,15 @@ footer {
   .hero__title {
     margin-block-start: 5%;
   }
+  .antwerp-image__container {
+    height: auto;
+  }
+  .ship__container picture {
+    max-width: 380px;
+  }
+  .mobile__container {
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 48rem) {
@@ -1385,6 +1399,21 @@ footer {
   .hero__title--right {
     margin-block-start: -2rem;
   }
+  .ship__container {
+    width: 70%;
+    margin-inline: auto;
+    justify-items: center;
+  }
+  .pile-image__container {
+    height: auto;
+  }
+  .mobile__container {
+    width: 60%;
+  }
+
+  .intro hr{
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 64rem) {
@@ -1396,7 +1425,7 @@ footer {
     max-width: 380px;
   }
   .hero__title {
-    width: 90%;
+    width: 100%;
     margin-inline: auto;
   }
   .hero__title--right {
@@ -1410,13 +1439,26 @@ footer {
     background-repeat: no-repeat;
     padding-block-start: 1%;
   }
+  .mobile__container-intro {
+    width: 80%;
+  }
+  /* .mobile__container {
+    width: 60%;
+  } */
+  
 }
 @media screen and (min-width: 90rem) {
   .hero__title {
-    width: 70%;
+    width: 100%;
     margin-inline: auto;
   }
   .hero {
     height: 90vh;
+  }
+  .mobile__container-intro {
+    width: 70%;
+  }
+  .mobile__container {
+    width: 50%;
   }
 }
