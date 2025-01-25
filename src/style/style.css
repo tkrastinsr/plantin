@@ -818,7 +818,7 @@ h2 {
   z-index: 3;
   width: 60%;
   margin-inline: auto;
-  max-width: 520px;
+  max-width: 355px;
   margin-block-start: 1rem;
 }
 
@@ -1470,7 +1470,7 @@ footer {
   .cliff__container hr {
     width: 60%;
   }
-  .ending-quote__text{
+  .ending-quote__text {
     width: 70%;
     margin-inline: auto;
   }
@@ -1532,7 +1532,7 @@ footer {
   .mobile__container {
     width: 60%;
   }
-  .ending-quote__text{
+  .ending-quote__text {
     width: 60%;
   }
 
@@ -1635,6 +1635,9 @@ footer {
     height: auto;
     overflow: hidden;
     position: relative;
+  }
+  .ending__circle {
+    margin-inline: auto;
   }
 }
 
@@ -1775,9 +1778,36 @@ footer {
   .cliff__container hr {
     width: 50%;
   }
-  .menu-visit__button-black{
+  .menu-visit__button-black {
     justify-self: flex-start;
     margin-inline-start: 10%;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .newsletter-form {
+    grid-area: 1 / 1 / 3 / 2;
+    align-self: center;
+    width: 60%;
+  }
+  .logo-black__container {
+    grid-area: 1/2/2/3;
+    margin-block-start: 0;
+    width: 40%;
+    max-width: 250px;
+  }
+  .contacts__container {
+    grid-area: 2/2/3/3;
+  }
+  .socials__container {
+    grid-area: 3/1/4/3;
+    margin-block-start: 0;
+    margin-block-end: 2rem;
+    height: fit-content;
+  }
+  .socials__text {
+    justify-self: center;
   }
 }
 @media screen and (min-width: 90rem) {
@@ -1794,7 +1824,7 @@ footer {
   .mobile__container {
     width: 50%;
   }
-   .ending-quote__text{
+  .ending-quote__text {
     width: 50%;
   }
   .book {
@@ -1838,5 +1868,64 @@ footer {
   .chapter-four__text {
     width: 80%;
     margin-inline: 4rem auto;
+  }
+  .newsletter-form {
+    width: 70%;
+    max-width: 700px;
+  }
+  .newsletter-submit {
+    width: 10%;
+  }
+}
+
+@media screen and (min-width: 160rem) {
+  .mobile__container-intro {
+    width: 27%;
+    margin-inline: auto;
+  }
+  .mobile__container {
+    width: 27%;
+    margin-inline: auto;
+  }
+  .master__container {
+    margin-block-start: 1rem;
+    width: 50%;
+    margin-inline: auto;
+  }
+  .master__text {
+    width: 100%;
+  }
+  .map__caption {
+    width: 30%;
+    margin-inline-start: 30%;
+  }
+  .text-book__p-one {
+    width: 100%;
+  }
+  .text-book__p-two {
+    width: 50%;
+    margin-inline-start: 0;
+  }
+  .skull-image {
+    max-width: 700px;
+  }
+  .chapter-four__text {
+    width: 50%;
+    margin-inline-start: 0;
+  }
+  .printing-house__container {
+    width: 27%;
+    margin-inline: auto;
+  }
+  footer {
+    width: 50%;
+    margin-inline: auto;
+  }
+  .newsletter-form {
+    width: 70%;
+  }
+  .ending__container {
+    width: 50%;
+    margin-inline: auto;
   }
 }
