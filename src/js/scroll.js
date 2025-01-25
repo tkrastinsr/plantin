@@ -190,7 +190,6 @@ const printSection = () => {
       start: "center bottom",
       end: "center center",
       scrub: 3,
-      markers: true,
     },
     x: "-10%",
     opacity: 0,
@@ -228,7 +227,6 @@ const printSection = () => {
       start: "center bottom",
       end: "center center",
       scrub: 3,
-      markers: true,
     },
     x: "-10%",
     opacity: 0,
@@ -239,7 +237,6 @@ const printSection = () => {
       start: "center bottom",
       end: "center center",
       scrub: 3,
-      markers: true,
     },
     x: "-10%",
   });
@@ -252,7 +249,6 @@ const finaleSection = ()=>{
         start: "center bottom",
         end: "center center",
         scrub: 3,
-        markers: true,
       },
       scale: 0,
     });
