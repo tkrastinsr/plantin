@@ -481,7 +481,6 @@ h2 {
   font-variation-settings: "wght" 500, "opsz" 100;
   font-size: var(--step-2);
   font-style: italic;
-  margin-inline: 5rem 1rem;
 }
 
 .book__conatainer {
@@ -677,7 +676,6 @@ h2 {
 
 .left-border {
   border-left: solid 2px var(--c-accent);
-  margin-inline-start: 10%;
   padding-inline-start: 1rem;
 }
 
@@ -709,7 +707,6 @@ h2 {
 .printing-house__container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   height: 70vh;
 }
 
@@ -717,11 +714,11 @@ h2 {
   grid-area: 1 / 1 / 2 / 2;
   justify-self: end;
   align-self: flex-end;
-  margin-inline-start: 4rem;
-  margin-block-end: -5rem;
+  margin-inline-start: 3rem;
+  margin-block-end: -2rem;
 }
 
-.ending__container hr {
+.cliff__container hr {
   width: 80%;
   border: 0;
   height: 2px;
@@ -730,7 +727,6 @@ h2 {
 }
 
 .museum__container {
-  margin-inline: 20% 5%;
   text-align: end;
 }
 
@@ -745,7 +741,7 @@ h2 {
   font-variation-settings: "wght" 500, "opsz" 1000;
 }
 
-.museum__container hr {
+.museum-cliff__content hr {
   width: 60%;
   border: 0;
   height: 2px;
@@ -1361,6 +1357,28 @@ footer {
   }
 }
 
+.museum-cliff__container {
+  container-type: inline-size;
+  container-name: museum;
+}
+
+@container museum (min-width: 530px) {
+  .museum-cliff__content {
+    display: flex;
+    gap: 2rem;
+  }
+  .museum-cliff__content p {
+    text-align: start;
+  }
+  .museum-cliff__content hr {
+    display: none;
+  }
+  .museum__name {
+    border-right: solid 2px var(--c-accent);
+    padding-inline: 2rem;
+  }
+}
+
 @media only screen and (min-width: 24rem) {
   .nav__logo-image {
     width: 20%;
@@ -1437,6 +1455,25 @@ footer {
     width: 70%;
     margin-inline: auto;
   }
+
+  .printing-house__text {
+    align-self: center;
+    margin-block-start: 0;
+  }
+
+  .printing-house__container {
+    height: auto;
+    width: 90%;
+    margin-inline: auto;
+    margin-block-start: 10%;
+  }
+  .cliff__container hr {
+    width: 60%;
+  }
+  .ending-quote__text{
+    width: 70%;
+    margin-inline: auto;
+  }
 }
 
 @media screen and (min-width: 48rem) {
@@ -1493,6 +1530,9 @@ footer {
     height: auto;
   }
   .mobile__container {
+    width: 60%;
+  }
+  .ending-quote__text{
     width: 60%;
   }
 
@@ -1588,6 +1628,13 @@ footer {
   }
   .book__conatainer {
     justify-content: space-evenly;
+  }
+  .bible-image__container {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
   }
 }
 
@@ -1714,6 +1761,24 @@ footer {
     width: 70%;
     margin-inline: 4rem auto;
   }
+  .printing-house__text {
+    align-self: center;
+    margin-block-start: 0;
+  }
+
+  .printing-house__container {
+    height: auto;
+    width: 80%;
+    margin-inline: auto;
+    margin-block-start: 10%;
+  }
+  .cliff__container hr {
+    width: 50%;
+  }
+  .menu-visit__button-black{
+    justify-self: flex-start;
+    margin-inline-start: 10%;
+  }
 }
 @media screen and (min-width: 90rem) {
   .hero__title {
@@ -1727,6 +1792,9 @@ footer {
     width: 70%;
   }
   .mobile__container {
+    width: 50%;
+  }
+   .ending-quote__text{
     width: 50%;
   }
   .book {
