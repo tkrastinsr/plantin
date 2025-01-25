@@ -1340,6 +1340,18 @@ footer {
 .text-book__container {
   display: grid;
 }
+.pile-pouch__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin-block-start: 15%;
+}
+.bag-coin__image {
+  grid-area: 1/1/2/2;
+  width: 40%;
+  margin-block-start: -30%;
+  margin-inline: auto;
+}
 
 @container attack (min-width: 530px) {
   .attack__content {
@@ -1473,6 +1485,16 @@ footer {
   .ending-quote__text {
     width: 70%;
     margin-inline: auto;
+  }
+  .bag-coin__image {
+    width: 30%;
+    margin-block-start: -20%;
+  }
+  .intro {
+    background-image: url(../assets/planet.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 40%;
   }
 }
 
@@ -1638,6 +1660,9 @@ footer {
   }
   .ending__circle {
     margin-inline: auto;
+  }
+  .intro {
+    background-size: 35%;
   }
 }
 
@@ -1809,6 +1834,19 @@ footer {
   .socials__text {
     justify-self: center;
   }
+  .interaction__two{
+    background-image: url(../assets/bookblockblack.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 20%;
+    
+  }
+  .master__container{
+    background-image: url(../assets/bookblockred.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 20%;
+  }
 }
 @media screen and (min-width: 90rem) {
   .hero__title {
@@ -1876,6 +1914,17 @@ footer {
   .newsletter-submit {
     width: 10%;
   }
+  .bag-coin__image {
+    width: 30%;
+    margin-block-start: -20%;
+    align-self: center;
+  }
+  .intro {
+    background-size: 30%;
+  }
+  .intro {
+    background-size: 30%;
+  }
 }
 
 @media screen and (min-width: 160rem) {
@@ -1927,5 +1976,11 @@ footer {
   .ending__container {
     width: 50%;
     margin-inline: auto;
+  }
+  .intro {
+    background-size: 25%;
+  }
+  .master__container{
+    background-size: 0%;
   }
 }
