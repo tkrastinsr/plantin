@@ -6,7 +6,7 @@ const hero = () => {
     scrollTrigger: {
       trigger: ".hero__title",
       start: "bottom center",
-      end: "bottom bottom",
+      end: "bottom top",
       scrub: 3,
     },
     opacity: 0,
