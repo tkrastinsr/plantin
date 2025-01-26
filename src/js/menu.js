@@ -1,5 +1,4 @@
 const init = () => {
-
   const $nav = document.querySelector(".nav");
   const $navButton = document.querySelector(".nav__button");
   const $navList = document.querySelector(".nav__list");
@@ -10,12 +9,14 @@ const init = () => {
   const $navLogo = document.querySelector(".nav__logo-image");
   const $burgerMenu = document.querySelector(".burger-menu");
   const $navItem = document.querySelectorAll(".nav__item");
+  const $nextStory = document.querySelector(".menu-next-story__container");
 
   $navButton.classList.remove("visually-hidden");
   $navList.classList.add("visually-hidden");
   $navVisit.classList.add("visually-hidden");
   $navName.classList.add("visually-hidden");
   $navLogo.classList.add("visually-hidden");
+  $nextStory.classList.add("visually-hidden");
   $burgerMenu.style.position = "fixed";
 
   const openNavigation = () => {
@@ -25,6 +26,7 @@ const init = () => {
     $navVisit.classList.remove("visually-hidden");
     $navName.classList.remove("visually-hidden");
     $navLogo.classList.remove("visually-hidden");
+    $nextStory.classList.remove("visually-hidden");
     $burgerMenu.classList.add("burger-menu--opened");
     $burgerMenu.style.position = "static";
     $nav.classList.add("nav--fixed");
@@ -37,6 +39,7 @@ const init = () => {
     $navVisit.classList.add("visually-hidden");
     $navName.classList.add("visually-hidden");
     $navLogo.classList.add("visually-hidden");
+    $nextStory.classList.add("visually-hidden");
     $burgerMenu.classList.remove("burger-menu--opened");
     $burgerMenu.style.position = "fixed";
     $nav.classList.remove("nav--fixed");
