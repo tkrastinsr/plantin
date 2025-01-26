@@ -17,6 +17,7 @@ const handleCloseFact = (e) => {
 
 const init = () => {
   $funButtons.forEach((button) => {
+    button.classList.remove("visually-hidden")
     button.addEventListener("click", handleOpenFact);
   });
   $closeButtons.forEach((close) => {
