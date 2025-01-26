@@ -1466,6 +1466,11 @@ footer {
   container-name: museum;
 }
 
+.hero__title-ink--bold {
+  font-family: "arsenica-variable",sans-serif;
+  font-variation-settings: 'wght' 600, 'opsz' 1000;
+}
+
 @container museum (min-width: 530px) {
   .museum-cliff__content {
     display: flex;
