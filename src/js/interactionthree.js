@@ -1,4 +1,4 @@
-const map = document.getElementById("map");
+const $map = document.getElementById("map");
 const $pathCircles = document.querySelectorAll(".waypoint.path");
 const $pathStart = document.querySelector(".waypoint-start");
 const $pathEnd = document.querySelector(".waypoint-end");
@@ -25,7 +25,7 @@ let currentPosition = "start";
 let selectedPath = [];
 
 const createLine = (fromElem, toElem) => {
-  const mapRect = map.getBoundingClientRect();
+  const mapRect = $map.getBoundingClientRect();
   const { left: x1, top: y1, width, height } = fromElem.getBoundingClientRect();
   const { left: x2, top: y2 } = toElem.getBoundingClientRect();
 
@@ -43,7 +43,7 @@ const createLine = (fromElem, toElem) => {
     transform: rotate(${angle}deg);
   `;
 
-  map.appendChild(line);
+  $map.appendChild(line);
 };
 
 const handleCircleClick = (event) => {
@@ -80,12 +80,16 @@ const interactionEnding = () => {
   audio.play();
 };
 
-const init = () => {
+const hasJs = ()=>{
   $interactionName.classList.remove("visually-hidden");
   $interactionText.classList.remove("visually-hidden");
   $interactionImage.classList.remove("visually-hidden");
   $pathStart.classList.remove("visually-hidden");
   $pathEnd.classList.remove("visually-hidden");
+}
+
+const init = () => {
+  hasJs();
   Object.keys(paths).forEach((from) => {
     paths[from].forEach((to) => {
       const fromElem = document.querySelector(`[data-id="${from}"]`);
