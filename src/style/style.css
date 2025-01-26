@@ -49,6 +49,11 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
 
 main {
   background-image: url("./../assets/background.webp");
