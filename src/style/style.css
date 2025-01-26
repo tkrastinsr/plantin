@@ -1393,6 +1393,53 @@ footer {
   font-size: var(--step--1);
 }
 
+.fun-fact__button {
+  width: 40%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transform-origin: center;
+  animation: rotate-fun-fact 0.5s infinite alternate ease-in-out;
+}
+
+.circular-dialog {
+  background-color: var(--c-accent);
+  border-radius: 50%;
+  width: 90%;
+  height: auto;
+  aspect-ratio: 1/1;
+  text-align: center;
+}
+.dialog__title {
+  font-family: "arsenica-variable", sans-serif;
+  font-variation-settings: "wght" 400, "opsz" 1000;
+  margin-block-start: 25%;
+  font-size: var(--step-4);
+  color: var(--c-white);
+}
+.dialog__fact {
+  font-size: var(--step-1);
+  color: var(--c-white);
+}
+
+.close__button {
+  background: var(--c-white);
+  border: none;
+  color: var(--c-black);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@keyframes rotate-fun-fact {
+  0% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
 @container attack (min-width: 530px) {
   .attack__content {
     display: flex;
@@ -1535,6 +1582,12 @@ footer {
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 40%;
+  }
+  .circular-dialog {
+    width: 60%;
+  }
+  .dialog__title {
+    margin-block-start: 25%;
   }
 }
 
@@ -1992,6 +2045,12 @@ footer {
     align-self: flex-end;
     justify-self: flex-end;
   }
+  .circular-dialog {
+    width: 40%;
+  }
+  .dialog__title {
+    margin-block-start: 20%;
+  }
 }
 @media screen and (min-width: 90rem) {
   .hero__title {
@@ -2073,6 +2132,12 @@ footer {
   .cta__section {
     margin-inline-end: 15%;
   }
+  .circular-dialog {
+    width: 35%;
+  }
+  .dialog__title {
+    margin-block-start: 30%;
+  }
 }
 
 @media screen and (min-width: 160rem) {
@@ -2130,5 +2195,11 @@ footer {
   }
   .master__container {
     background-size: 0%;
+  }
+  .circular-dialog {
+    width: 20%;
+  }
+  .dialog__title {
+    margin-block-start: 30%;
   }
 }

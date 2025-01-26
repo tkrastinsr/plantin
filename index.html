@@ -529,6 +529,39 @@
               </picture>
             </div>
           </div>
+          <button class="fun-fact__button top__space" data-dialog="dialogone">
+            <picture>
+              <source
+                sizes="(max-width: 139px) 100vw, 139px"
+                srcset="
+                  ./src/assets/presshere_sfji8q_c_scale,w_100.avif 100w,
+                  ./src/assets/presshere_sfji8q_c_scale,w_139.avif 139w
+                "
+                type="image/avif"
+              />
+              <img
+                sizes="(max-width: 139px) 100vw, 139px"
+                srcset="
+                  ./src/assets/presshere_wpbiwo_c_scale,w_100.png 100w,
+                  ./src/assets/presshere_wpbiwo_c_scale,w_139.png 139w
+                "
+                src="./src/assets/presshere_wpbiwo_c_scale,w_139.png"
+                alt="an illustration of a hand pointing"
+                width="139"
+                height="139"
+              />
+            </picture>
+          </button>
+          <dialog id="dialogone" class="circular-dialog">
+            <div class="dialog-content">
+              <p class="dialog__title">Did you know?</p>
+              <p class="dialog__fact">
+                Christophe Plantin was born in 1520, only 65 years before
+                Gutenberg printed his very first bible with movable type press.
+              </p>
+              <button class="close__button">Close</button>
+            </div>
+          </dialog>
           <p class="top__space">
             <span class="highlight"
               ><span class="bigger">C</span>hristophe Plantin</span
@@ -1023,6 +1056,40 @@
             </picture>
           </div>
         </div>
+        <button class="fun-fact__button top__space" data-dialog="dialogtwo">
+          <picture>
+            <source
+              sizes="(max-width: 139px) 100vw, 139px"
+              srcset="
+                ./src/assets/presshere_sfji8q_c_scale,w_100.avif 100w,
+                ./src/assets/presshere_sfji8q_c_scale,w_139.avif 139w
+              "
+              type="image/avif"
+            />
+            <img
+              sizes="(max-width: 139px) 100vw, 139px"
+              srcset="
+                ./src/assets/presshere_wpbiwo_c_scale,w_100.png 100w,
+                ./src/assets/presshere_wpbiwo_c_scale,w_139.png 139w
+              "
+              src="./src/assets/presshere_wpbiwo_c_scale,w_139.png"
+              alt="an illustration of a hand pointing"
+              width="139"
+              height="139"
+            />
+          </picture>
+        </button>
+        <dialog id="dialogtwo" class="circular-dialog">
+          <div class="dialog-content p__space">
+            <p class="dialog__title">Did you know?</p>
+            <p class="dialog__fact">
+              Until 1585, Antwerp remained a leading center for the printing of
+              atlases, maps and cosmographies. Plantin played a massive role in
+              this.
+            </p>
+            <button class="close__button">Close</button>
+          </div>
+        </dialog>
         <div class="mobile__container p__space">
           <div class="attack__container">
             <div class="attack__content">
@@ -1319,6 +1386,40 @@
             often needing custom-designed fonts and symbols.
           </p>
         </div>
+        <button class="fun-fact__button top__space" data-dialog="dialogthree">
+          <picture>
+            <source
+              sizes="(max-width: 139px) 100vw, 139px"
+              srcset="
+                ./src/assets/presshere_sfji8q_c_scale,w_100.avif 100w,
+                ./src/assets/presshere_sfji8q_c_scale,w_139.avif 139w
+              "
+              type="image/avif"
+            />
+            <img
+              sizes="(max-width: 139px) 100vw, 139px"
+              srcset="
+                ./src/assets/presshere_wpbiwo_c_scale,w_100.png 100w,
+                ./src/assets/presshere_wpbiwo_c_scale,w_139.png 139w
+              "
+              src="./src/assets/presshere_wpbiwo_c_scale,w_139.png"
+              alt="an illustration of a hand pointing"
+              width="139"
+              height="139"
+            />
+          </picture>
+        </button>
+        <dialog id="dialogthree" class="circular-dialog">
+          <div class="dialog-content p__space">
+            <p class="dialog__title">Did you know?</p>
+            <p class="dialog__fact">
+              Plantin was actually reluctant to publish works in Dutch. He
+              wanted to avoid competition with other Antwerp publishers in this
+              field.
+            </p>
+            <button class="close__button">Close</button>
+          </div>
+        </dialog>
         <div class="text-book__container">
           <div
             class="mobile__container p__space top__space-space text-book__p-one"
@@ -2255,5 +2356,6 @@
     <script src="./src/js/interactionone.js" type="module"></script>
     <script src="./src/js/interactionthree.js" type="module"></script>
     <script src="./src/js/interactionfour.js" type="module"></script>
+    <script src="./src/js/funfact.js" type="module"></script>
   </body>
 </html>
