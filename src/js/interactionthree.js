@@ -21,6 +21,7 @@ const paths = {
   7: ["8"],
   8: ["end"],
 };
+const $swordSound = document.getElementById("swordSound");
 let currentPosition = "start";
 let selectedPath = [];
 
@@ -76,17 +77,16 @@ const interactionEnding = () => {
   $pathStart.classList.add("visually-hidden");
   $pathEnd.classList.add("visually-hidden");
   $bloodImage.classList.remove("visually-hidden");
-  const audio = new Audio("./src/assets/sword.mp3");
-  audio.play();
+  $swordSound.play();
 };
 
-const hasJs = ()=>{
+const hasJs = () => {
   $interactionName.classList.remove("visually-hidden");
   $interactionText.classList.remove("visually-hidden");
   $interactionImage.classList.remove("visually-hidden");
   $pathStart.classList.remove("visually-hidden");
   $pathEnd.classList.remove("visually-hidden");
-}
+};
 
 const init = () => {
   hasJs();
