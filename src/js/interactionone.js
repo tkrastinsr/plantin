@@ -3,7 +3,7 @@ const $bindingPoints = document.querySelectorAll(".circle");
 const $bookImage = document.querySelector(".book-image__container");
 const $bindedImage = document.querySelector(".bound-book-image__container");
 const $container = document.querySelector(".draggable-container");
-const threadSound = new Audio("./src/assets/thread.mp3");
+const $threadSound = document.getElementById("threadSound");
 const $interactionName = document.getElementById("interaction__name");
 const $interactionText = document.getElementById("interaction__text");
 const $interactionImage = document.getElementById(
@@ -75,7 +75,7 @@ const moveCircle = (e) => {
       draggableRect.bottom > rect.top
     ) {
       const index = parseInt(point.dataset.index, 10);
-      threadSound.play();
+      $threadSound.play();
 
       if (index === currentIndex + 1) {
         point.style.backgroundColor = "green";
