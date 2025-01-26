@@ -1,5 +1,4 @@
 const $works = document.querySelectorAll(".sus-work");
-// const $letterDisplay = document.querySelector(".letter");
 const $letterDisplay = document.getElementById("action-text");
 const $dragCircle = document.querySelector(".drag-circle");
 const $instructionText = document.querySelector(".interaction-four__text");
@@ -9,6 +8,7 @@ const $interactionImage = document.getElementById(
 const $interactionTitle = document.getElementById("interaction-four__name");
 const $actionText = document.getElementById("action-text__container-pe");
 const $draggingCircle = document.getElementById("drag-circle__container-pe");
+
 let currentWorkIndex = 0;
 let direction = "";
 let dragStartX = 0;
@@ -42,8 +42,6 @@ const showNextLetter = () => {
   const randomLetter = String.fromCharCode(65 + Math.floor(Math.random() * 26));
   $letterDisplay.textContent = `Press ${randomLetter}`;
 };
-
-//resets circle
 const resetCirclePosition = () => {
   $dragCircle.style.transform = "translateX(0px)";
 };
@@ -107,15 +105,21 @@ const handleEventListeners = () => {
   }
 };
 
-const init = () => {
+const hasJs = () => {
   $interactionImage.classList.remove("visually-hidden");
   $instructionText.classList.remove("visually-hidden");
   $interactionTitle.classList.remove("visually-hidden");
   $actionText.classList.remove("visually-hidden");
   $draggingCircle.classList.remove("visually-hidden");
+};
+
+const init = () => {
+  hasJs();
+
   isMobile = window.innerWidth < 1024;
-  console.log($instructionText.textContent);
+
   handleEventListeners();
+  
   if (isMobile) {
     $instructionText.textContent =
       "Drag the circle in the right direction to hide heretic red prints";
