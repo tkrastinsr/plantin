@@ -1,6 +1,21 @@
 gsap.registerPlugin(ScrollTrigger);
 const screenWidth = window.innerWidth;
 
+const interactive = () => {
+  gsap.utils.toArray(".interaction-circle").forEach((circle) => {
+    gsap.from(circle, {
+      scrollTrigger: {
+        trigger: circle,
+        start: "center bottom",
+        end: "center center",
+        scrub: 2,
+      },
+      scale: 0.3,
+      opacity: 0,
+    });
+  });
+};
+
 const hero = () => {
   gsap.to(".hero__title", {
     scrollTrigger: {
@@ -11,18 +26,6 @@ const hero = () => {
     },
     opacity: 0,
   });
-};
-
-const intro = () => {
-  gsap.from(".antwerp-image__container", {
-    scrollTrigger: {
-      trigger: ".antwerp-image__container",
-      start: "top bottom",
-      end: "bottom bottom",
-      scrub: 2,
-    },
-    y: "200px",
-  });
   gsap.from(".intro__quote", {
     scrollTrigger: {
       trigger: ".intro__quote",
@@ -32,6 +35,18 @@ const intro = () => {
     },
     x: "-100px",
     opacity: 0,
+  });
+};
+
+const chapterOne = () => {
+  gsap.from(".antwerp-image__container", {
+    scrollTrigger: {
+      trigger: ".antwerp-image__container",
+      start: "top bottom",
+      end: "bottom bottom",
+      scrub: 2,
+    },
+    y: "200px",
   });
   gsap.from(".bag-coin__image", {
     scrollTrigger: {
@@ -50,18 +65,6 @@ const intro = () => {
       scrub: 2,
     },
     y: "10%",
-  });
-  gsap.utils.toArray(".interaction-circle").forEach((circle) => {
-    gsap.from(circle, {
-      scrollTrigger: {
-        trigger: circle,
-        start: "center bottom",
-        end: "center center",
-        scrub: 2,
-      },
-      scale: 0.3,
-      opacity: 0,
-    });
   });
   gsap.from(".binding-points", {
     scrollTrigger: {
@@ -83,10 +86,10 @@ const intro = () => {
   });
   gsap.fromTo(
     ".chest__bottom",
-    { opacity: 1, y: -110 }, // Starting state
+    { opacity: 1, y: -110 },
     {
       opacity: 0,
-      y: "100px", // Ending state
+      y: "100px",
       scrollTrigger: {
         trigger: ".chest__bottom",
         start: "top bottom",
@@ -103,6 +106,9 @@ const intro = () => {
     },
     opacity: 0,
   });
+};
+
+const chpaterTwo = () => {
   gsap.from(".interaction-three__end-image", {
     scrollTrigger: {
       trigger: ".interaction-three__end-image",
@@ -125,6 +131,9 @@ const intro = () => {
       y: 50,
     });
   });
+};
+
+const chapaterThree = () => {
   gsap.from(".print-image", {
     scrollTrigger: {
       trigger: ".print-image",
@@ -145,45 +154,6 @@ const intro = () => {
     opacity: 0,
     x: "+10%",
   });
-};
-
-const molds = () => {};
-if (screenWidth > 767) {
-  gsap.from(".molds-image__container", {
-    scrollTrigger: {
-      trigger: ".print-image",
-      start: "top bottom",
-      end: "top center",
-      scrub: 2,
-    },
-    x: "200px",
-    y: "-70%",
-    rotation: 40,
-  });
-  gsap.from(".molds-two-image__container", {
-    scrollTrigger: {
-      trigger: ".print-image",
-      start: "top bottom",
-      end: "top center",
-      scrub: 2,
-    },
-    x: "-200px",
-    y: "70%",
-    rotation: 40,
-  });
-} else {
-  gsap.from(".molds-image__container", {
-    scrollTrigger: {
-      trigger: ".print-image",
-      start: "bottom center",
-      scrub: 2,
-    },
-    y: "-35%",
-    rotation: 55,
-  });
-}
-
-const printSection = () => {
   gsap.from(".communication__quote", {
     scrollTrigger: {
       trigger: ".communication__quote",
@@ -212,6 +182,46 @@ const printSection = () => {
     },
     y: "20%",
   });
+};
+
+const molds = () => {
+  if (screenWidth > 767) {
+    gsap.from(".molds-image__container", {
+      scrollTrigger: {
+        trigger: ".print-image",
+        start: "top bottom",
+        end: "top center",
+        scrub: 2,
+      },
+      x: "200px",
+      y: "-70%",
+      rotation: 40,
+    });
+    gsap.from(".molds-two-image__container", {
+      scrollTrigger: {
+        trigger: ".print-image",
+        start: "top bottom",
+        end: "top center",
+        scrub: 2,
+      },
+      x: "-200px",
+      y: "70%",
+      rotation: 40,
+    });
+  } else {
+    gsap.from(".molds-image__container", {
+      scrollTrigger: {
+        trigger: ".print-image",
+        start: "bottom center",
+        scrub: 2,
+      },
+      y: "-35%",
+      rotation: 55,
+    });
+  }
+};
+
+const chapterFour = () => {
   gsap.from(".skull-image", {
     scrollTrigger: {
       trigger: ".skull-image",
@@ -221,6 +231,9 @@ const printSection = () => {
     },
     x: "-20%",
   });
+};
+
+const chapterFive = () => {
   gsap.from(".letter__scroll", {
     scrollTrigger: {
       trigger: ".letter__scroll",
@@ -231,6 +244,9 @@ const printSection = () => {
     x: "-10%",
     opacity: 0,
   });
+};
+
+const finaleSection = () => {
   gsap.from(".printing-house__image", {
     scrollTrigger: {
       trigger: ".printing-house__image",
@@ -240,25 +256,26 @@ const printSection = () => {
     },
     x: "-10%",
   });
+  gsap.from(".ending__circle", {
+    scrollTrigger: {
+      trigger: ".ending__circle",
+      start: "center bottom",
+      end: "center center",
+      scrub: 3,
+    },
+    scale: 0,
+  });
 };
 
-const finaleSection = ()=>{
-    gsap.from(".ending__circle", {
-      scrollTrigger: {
-        trigger: ".ending__circle",
-        start: "center bottom",
-        end: "center center",
-        scrub: 3,
-      },
-      scale: 0,
-    });
-}
-
 const startAnimations = () => {
+  interactive();
   hero();
-  intro();
+  chapterOne();
+  chpaterTwo();
+  chapaterThree();
   molds();
-  printSection();
+  chapterFour();
+  chapterFive();
   finaleSection();
 };
 
