@@ -1,16 +1,16 @@
-const draggable = document.querySelector(".draggable-circle");
-const bindingPoints = document.querySelectorAll(".circle");
-const bookImage = document.querySelector(".book-image__container");
-const bindedImage = document.querySelector(".bound-book-image__container");
-const container = document.querySelector(".draggable-container");
+const $draggable = document.querySelector(".draggable-circle");
+const $bindingPoints = document.querySelectorAll(".circle");
+const $bookImage = document.querySelector(".book-image__container");
+const $bindedImage = document.querySelector(".bound-book-image__container");
+const $container = document.querySelector(".draggable-container");
 const threadSound = new Audio("./src/assets/thread.mp3");
-const interactionName = document.getElementById("interaction__name");
-const interactionText = document.getElementById("interaction__text");
-const interactionImage = document.getElementById(
+const $interactionName = document.getElementById("interaction__name");
+const $interactionText = document.getElementById("interaction__text");
+const $interactionImage = document.getElementById(
   "interaction-image__container"
 );
-const bubblesContainer = document.getElementById("binding-points__container");
-const instructions = document.getElementById("interaction-one__instructions");
+const $bubblesContainer = document.getElementById("binding-points__container");
+const $instructions = document.getElementById("interaction-one__instructions");
 
 let currentIndex = 0;
 let isDragging = false;
@@ -18,7 +18,7 @@ let isDragging = false;
 let offsetX = 0;
 let offsetY = 0;
 
-const startDrag = (e) => {
+const handleStartDrag = (e) => {
   e.preventDefault();
   isDragging = true;
 
@@ -26,7 +26,7 @@ const startDrag = (e) => {
   //     console.log("Audio playback prevented:", err);
   //   });
 
-  const rect = draggable.getBoundingClientRect();
+  const rect = $draggable.getBoundingClientRect();
   const clientX = e.touches ? e.touches[0].clientX : e.clientX;
   const clientY = e.touches ? e.touches[0].clientY : e.clientY;
 
@@ -56,17 +56,17 @@ const moveCircle = (e) => {
   const clientX = e.touches ? e.touches[0].clientX : e.clientX;
   const clientY = e.touches ? e.touches[0].clientY : e.clientY;
 
-  const containerRect = container.getBoundingClientRect();
+  const containerRect = $container.getBoundingClientRect();
   const x = clientX - containerRect.left - offsetX;
   const y = clientY - containerRect.top - offsetY;
 
-  draggable.style.position = "absolute";
-  draggable.style.left = `${x}px`;
-  draggable.style.top = `${y}px`;
+  $draggable.style.position = "absolute";
+  $draggable.style.left = `${x}px`;
+  $draggable.style.top = `${y}px`;
 
-  bindingPoints.forEach((point) => {
+  $bindingPoints.forEach((point) => {
     const rect = point.getBoundingClientRect();
-    const draggableRect = draggable.getBoundingClientRect();
+    const draggableRect = $draggable.getBoundingClientRect();
 
     if (
       draggableRect.left < rect.right &&
@@ -84,9 +84,9 @@ const moveCircle = (e) => {
 
         if (currentIndex === 6) {
           setTimeout(() => {
-            bindedImage.classList.remove("visually-hidden");
-            bookImage.classList.add("visually-hidden");
-            bindingPoints.forEach((p) => (p.style.display = "none")); // Hide all points
+            $bindedImage.classList.remove("visually-hidden");
+            $bookImage.classList.add("visually-hidden");
+            $bindingPoints.forEach((p) => (p.style.display = "none"));
           }, 500);
         }
       }
@@ -94,15 +94,19 @@ const moveCircle = (e) => {
   });
 };
 
+const hasJs = () => {
+  $interactionName.classList.remove("visually-hidden");
+  $interactionText.classList.remove("visually-hidden");
+  $interactionImage.classList.remove("visually-hidden");
+  $container.classList.remove("visually-hidden");
+  $bubblesContainer.classList.remove("visually-hidden");
+  $instructions.classList.remove("visually-hidden");
+};
+
 const init = () => {
-  interactionName.classList.remove("visually-hidden");
-  interactionText.classList.remove("visually-hidden");
-  interactionImage.classList.remove("visually-hidden");
-  container.classList.remove("visually-hidden");
-  bubblesContainer.classList.remove("visually-hidden");
-  instructions.classList.remove("visually-hidden");
-  draggable.addEventListener("mousedown", startDrag);
-  draggable.addEventListener("touchstart", startDrag);
+  hasJs();
+  $draggable.addEventListener("mousedown", handleStartDrag);
+  $draggable.addEventListener("touchstart", handleStartDrag);
 };
 
 init();
